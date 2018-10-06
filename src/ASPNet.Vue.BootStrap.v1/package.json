@@ -1,0 +1,31 @@
+{
+  "name": "ASPNet.Vue.BootStrap.v1",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/webpack-env": "^1.13.6",
+    "ajv": "^6.5.4",
+    "aspnet-webpack": "^3.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "bootstrap": "^3.3.6",
+    "css-loader": "^1.0.0",
+    "event-source-polyfill": "^0.0.16",
+    "file-loader": "^2.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.3",
+    "popper.js": "1.14.4",
+    "style-loader": "^0.23.0",
+    "typescript": "^3.1.1",
+    "url-loader": "^1.1.1",
+    "vue": "^2.5.17",
+    "vue-loader": "^15.4.2",
+    "vue-property-decorator": "^7.2.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.2"
+  }
+}

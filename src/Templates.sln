@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{D5B8C1B8-0B76-433C-9809-AC126CEF88A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNet.Vue.BootStrap.v1", "ASPNet.Vue.BootStrap.v1\ASPNet.Vue.BootStrap.v1.csproj", "{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86271F1A-E82B-4E7D-A3EB-1F90F5835E4C} = {D5B8C1B8-0B76-433C-9809-AC126CEF88A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0671E25-A930-47F1-A4B8-65FF3602EABA}
+	EndGlobalSection
+EndGlobal
