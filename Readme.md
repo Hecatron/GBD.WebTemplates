@@ -1,8 +1,8 @@
 # Readme
 
 This is a series of templates for use with .net core / Visual studio
-These are based on templates from the below links
 
+  * https://survivejs.com/webpack/building/source-maps/
   * https://blogs.msdn.microsoft.com/webdev/2017/02/14/building-single-page-applications-on-asp-net-core-with-javascriptservices/
   * https://github.com/MarkPieszak/aspnetcore-Vue-starter
   * https://github.com/aspnet/Templating
