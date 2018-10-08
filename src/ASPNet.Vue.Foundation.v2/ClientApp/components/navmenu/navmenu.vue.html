@@ -1,36 +1,21 @@
 <template>
-    <div class="main-nav">
-        <div class="navbar navbar-expand-md navbar-dark bg-dark">
-            <button type="button" class="navbar-toggler" @click="toggleCollapsed">
-                <span class="navbar-toggler-icon"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <<router-link class="navbar-brand" to="/"><icon :icon="['fab', 'microsoft']" />ASPNet.Vue.Foundation.v2</router-link>
-            <transition name="slide">
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <router-link to="/" :exact="true">
-                                <span class="glyphicon glyphicon-home"></span> Home
-                            </router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link to="/counter">
-                                <span class="glyphicon glyphicon-education"></span> Counter
-                            </router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link to="/fetchdata">
-                                <span class="glyphicon glyphicon-th-list"></span> Fetch data
-                            </router-link>
-                        </li>
-                    </ul>
-                </div>
-            </transition>
-        </div>
-    </div>
+    <ul class="vertical menu">
+        <li class="nav-item">
+            <router-link to="/" :exact="true">
+                <span class="glyphicon glyphicon-home"></span> Home
+            </router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="/counter">
+                <span class="glyphicon glyphicon-education"></span> Counter
+            </router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="/fetchdata">
+                <span class="glyphicon glyphicon-th-list"></span> Fetch data
+            </router-link>
+        </li>
+    </ul>
 </template>
 
-<style src="./navmenu.css" />
+<!-- <style src="./navmenu.css" /> -->
