@@ -19,10 +19,12 @@ dotnet new -l
 
 ## Templates
 
+
 ### ASPNet.Vue.BootStrap.v1
 
 This is a version of the original vue / webpack template but updated to the latest npm packages.
 and works with the debugging of typescript
+
 
 ### ASPNet.Vue.BootStrap.v2
 
@@ -32,3 +34,14 @@ then added in the changes made under
 https://github.com/MarkPieszak/aspnetcore-Vue-starter
 
 TODO - update to bootstrap 4 - "bootstrap": "^4.1.3"
+
+
+### ASPNet.Vue.Foundation.v2
+
+For a while Semantic UI was a favourite for an alternative to bootstrap
+But it looks like zurbs foundation might now be the better option.
+
+  * Seems to have more features
+  * Doesn't suffer from the problem of all sites looking the same
+  * https://codeburst.io/part-1-bootstrap-4-vs-foundation-6-4-the-grid-8c02747f14fb
+  * https://foundation.zurb.com/sites/docs/
