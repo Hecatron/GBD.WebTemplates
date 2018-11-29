@@ -1,0 +1,12 @@
+
+/*  Font Awesome font files
+    The ~ means relative to the node_modules directory path with sass-loader
+
+    This can be used when using font files from css, this will show up as files under dist/fonts/
+*/
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';

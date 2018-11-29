@@ -1,0 +1,62 @@
+@import 'foundation/settings';
+@import 'foundation/site';
+
+.multilevel-accordion-menu {
+    // background for main accordion items
+    .is-accordion-submenu-parent a {
+        background: $multilevel-accordion-bg;
+    }
+    // background for sub accordion items
+    .is-accordion-submenu a {
+        background: $multilevel-accordion-sub-bg;
+    }
+    // creates classes for nested elements, sub-item-*
+    @for $i from 1 through 6 {
+        .sublevel-#{$i} {
+            text-indent: 0rem + $i;
+        }
+    }
+
+    a {
+        color: $white;
+        // sets accodion item separator color
+        box-shadow: inset 0 -1px $multilevel-accordion-separator;
+
+        &::after {
+            // sets accodion arrow color and direction
+            border-color: $white transparent transparent;
+        }
+    }
+    // padding for each list item
+    .menu > li:not(.menu-text) > a {
+        padding: 1.2rem 1rem;
+    }
+}
+
+// style for folder icon on subitem anchors without a submenu
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a.subitem::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f15b";
+    margin-right: 1rem;
+}
+
+// changes folder icon to open then accordion is open
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="true"] a {
+    &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f07c";
+        margin-right: 1rem;
+    }
+}
+
+// changes folder icon to closed then accordion is closed
+.multilevel-accordion-menu .is-accordion-submenu-parent[aria-expanded="false"] a {
+    &::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f07b";
+        margin-right: 1rem;
+    }
+}
