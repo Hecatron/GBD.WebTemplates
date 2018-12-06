@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "AspNetCore.Vue.Bootstrap1"
+		},
+		{
+			"path": "AspNetCore.Vue.Foundation1"
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"formulahendry.dotnet",
+			"formulahendry.dotnet-test-explorer",
+			"rahulsahay.csharp-aspnetcore",
+			"schneiderpat.aspnet-helper",
+			"aaron-bond.better-comments",
+			"ms-vscode.csharp",
+			"jchannon.csharpextensions",
+			"leopotam.csharpfixformat",
+			"jorgeserrano.vscode-csharp-snippets",
+			"k--kato.docomment",
+			"msjsdiag.debugger-for-chrome",
+			"doggy8088.netcore-snippets",
+			"codezombiech.gitignore",
+			"gregorbiswanger.json2ts",
+			"stringham.move-ts",
+			"tintoy.msbuild-project-tools",
+			"jmrog.vscode-nuget-package-manager",
+			"jesschadwick.nuget-reverse-package-search",
+			"quicktype.quicktype",
+			"christian-kohler.path-intellisense",
+			"esbenp.prettier-vscode",
+			"craigthomas.supersharp",
+			"wayou.vscode-todo-highlight",
+			"eg2.tslint",
+			"rbbit.typescript-hero",
+			"pmneo.tsimporter",
+			"pflannery.vscode-versionlens",
+			"octref.vetur",
+			"visualstudioexptteam.vscodeintellicode"
+		],
+		"unwantedRecommendations": []
+	}
+}
