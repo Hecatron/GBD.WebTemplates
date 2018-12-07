@@ -1,0 +1,77 @@
+@import 'foundation/settings';
+
+$app-dashboard-top-nav-color: #2c3840;
+$app-dashboard-top-nav-height: 55px;
+
+.app-dashboard-top-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $app-dashboard-top-nav-color;
+    height: $app-dashboard-top-nav-height;
+    width: 100%;
+    flex: 0 0 $app-dashboard-top-nav-height;
+
+    .menu-icon {
+        vertical-align: text-bottom;
+    }
+
+    .grid-x {
+        width: 100%;
+    }
+}
+
+.app-dashboard-logo {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.app-dashboard-search-bar-container {
+    position: relative;
+}
+
+.app-dashboard-search {
+    background: lighten($app-dashboard-top-nav-color, 10%);
+    border: 0;
+    margin-bottom: 0;
+    color: $white;
+
+    &:active,
+    &:focus {
+        background: darken($app-dashboard-top-nav-color, 5%);
+    }
+}
+
+.app-dashboard-search-icon {
+    position: absolute;
+    color: $white;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.app-dashboard-top-bar-actions {
+    align-items: center;
+    display: flex;
+
+    button {
+        margin-bottom: 0;
+        margin-right: 2rem;
+
+        &.hollow {
+            border-color: $white;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .fa-info-circle {
+        color: $white;
+        font-size: 1.5rem;
+    }
+}
