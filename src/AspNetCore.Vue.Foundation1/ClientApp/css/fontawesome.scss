@@ -2,7 +2,7 @@
 /*  Font Awesome font files
     The ~ means relative to the node_modules directory path with sass-loader
 
-    This can be used when using font files from css, this will show up as files under dist/fonts/
+    This file is included by webpack.config.vendor.js
 */
 
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';

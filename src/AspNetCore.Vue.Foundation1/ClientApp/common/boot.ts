@@ -10,7 +10,7 @@ import "../css/foundation/app.scss";
 // TODO test the below without the font files css
 
 // This will bring in the svg files for fontawesome
-import setup_icons from "../vendor/fontawesome/svgicons";
+import setup_icons from "./svgicons";
 setup_icons();
 
 // Destnation routes for different urls

@@ -28,9 +28,8 @@ var entrypoints = {
     'vue-router',
     // Foundation related
     'foundation-sites',
-    // Font Awesome
-    // Font Files
-    './ClientApp/vendor/fontawesome/cssfontfiles.scss',
+    // Font Awesome Font Files
+    './ClientApp/css/fontawesome.scss',
   ]
 };
 
