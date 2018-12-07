@@ -12,7 +12,6 @@
             "problemMatcher": "$msCompile"
         },
         {
-            // TODO npm script
             "label": "tslint all",
             "command": "node node_modules/tslint/bin/tslint -c .vscode/tslint.json --exclude 'node_modules/**/*.{j,t}s' **/*.ts",
             "type": "shell",
