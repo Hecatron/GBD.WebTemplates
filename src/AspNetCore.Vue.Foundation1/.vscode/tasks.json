@@ -10,6 +10,27 @@
                 "${workspaceFolder}/AspNetCore.Vue.Foundation1.csproj"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            // TODO npm script
+            "label": "tslint all",
+            "command": "node node_modules/tslint/bin/tslint -c .vscode/tslint.json --exclude 'node_modules/**/*.{j,t}s' **/*.ts",
+            "type": "shell",
+            "problemMatcher": {
+               "owner": "tslint",
+               "fileLocation": [
+                   "relative",
+                   "${workspaceRoot}"
+               ],
+               "severity":  "warning",
+               "pattern": {
+                   "regexp": "^(.*)\\[(\\d+), (\\d+)\\]:\\s+(.*)$",
+                   "file": 1,
+                   "line": 2,
+                   "column": 3,
+                   "message": 4
+               }
+            }
         }
     ]
 }
