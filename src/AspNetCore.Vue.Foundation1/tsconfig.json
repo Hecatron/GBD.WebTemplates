@@ -15,6 +15,7 @@
     "sourceMap": true,
     "skipDefaultLibCheck": true,
     "strict": true,
+    "strictFunctionTypes": false,
     "types": [ "webpack-env" ]
   },
   "exclude": [

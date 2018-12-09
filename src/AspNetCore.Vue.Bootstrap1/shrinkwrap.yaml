@@ -6,10 +6,10 @@ dependencies:
   jquery: 3.3.1
   metismenu: 3.0.3
   nprogress: 0.2.0
-  vue: 2.5.18
+  vue: 2.5.19
   vue-router: 3.0.2
-  vue-server-renderer: 2.5.18
-  vue-template-compiler: 2.5.18
+  vue-server-renderer: 2.5.19
+  vue-template-compiler: 2.5.19
   vuex: 3.0.1
   vuex-router-sync: 5.0.0
 devDependencies:
@@ -5545,7 +5545,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
-  /vue-server-renderer/2.5.18:
+  /vue-server-renderer/2.5.19:
     dependencies:
       chalk: 1.1.3
       hash-sum: 1.0.2
@@ -5557,7 +5557,7 @@ packages:
       source-map: 0.5.6
     dev: false
     resolution:
-      integrity: sha512-S8/3FygkbKte6Rh/zH08LHFftk6z56chQJyohzBzR5hmErhe6cI/z3MjJFiJDwdzML+0Uok8uKrGw3g6lrwWaA==
+      integrity: sha512-JZ96eorrH/X29MjidX21l50ybYSZtCywkAK4G7Gyjq4qbm0c/B75332XplVN4ngq/c737Mx28sTXqs6DDfVfDQ==
   /vue-style-loader/4.1.2:
     dependencies:
       hash-sum: 1.0.2
@@ -5565,21 +5565,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0ip8ge6Gzz/Bk0iHovU9XAUQaFt/G2B61bnWa2tCcqqdgfHs1lF9xXorFbE55Gmy92okFT+8bfmySuUOu13vxQ==
-  /vue-template-compiler/2.5.18:
+  /vue-template-compiler/2.5.19:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
     dev: false
     resolution:
-      integrity: sha512-WG2G+r5YxqkbTyJnbpkJuISTVI9MvYNGAZVKnmn8S4AoP0R0OufIKrHEV+GKwilLa+p3t/Plo8FzJXdhL9m4Sw==
+      integrity: sha512-SIoE8gvl0UjZ/wccwHhj0HUqL+kLkJNy/8v7TXElz6rqxqKOKLoAynVV4L78qHZOHhLoyRl5BOmUFQPPdcD5qw==
   /vue-template-es2015-compiler/1.6.0:
     dev: true
     resolution:
       integrity: sha512-x3LV3wdmmERhVCYy3quqA57NJW7F3i6faas++pJQWtknWT+n7k30F4TVdHvCLn48peTJFRvCpxs3UuFPqgeELg==
-  /vue/2.5.18:
+  /vue/2.5.19:
     dev: false
     resolution:
-      integrity: sha512-j4oT4jQdhBf3dUxzu1ogjkhzMU44AtwqtLz7oq/u7340/lmUUogTG6/D6P4/J2cCosoM21MqMIUsQchPKS4elg==
+      integrity: sha512-zs7w/dy/yMTCcUunUl05UHhYEI2bt67R7G2jD42HnJ28JxCtC1FY8zZ9GU4PF2SJP8Ff/B9HyojWk/NztqKfFA==
   /vuex-router-sync/5.0.0:
     dev: false
     peerDependencies:
@@ -5844,13 +5844,13 @@ specifiers:
   typescript: ^3.2.2
   uglifyjs-webpack-plugin: 2.0.1
   url-loader: ^1.1.2
-  vue: ^2.5.18
+  vue: ^2.5.19
   vue-loader: ^15.4.2
   vue-property-decorator: ^7.2.0
   vue-router: ^3.0.2
-  vue-server-renderer: ^2.5.18
+  vue-server-renderer: ^2.5.19
   vue-style-loader: 4.1.2
-  vue-template-compiler: ^2.5.18
+  vue-template-compiler: ^2.5.19
   vuex: ^3.0.1
   vuex-router-sync: ^5.0.0
   webpack: ^4.27.1

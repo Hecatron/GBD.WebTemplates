@@ -7,8 +7,8 @@ import "foundation-sites";
 // Load in the default theme for Foundation UI
 import "../css/foundation/app.scss";
 
-// TODO test the below without the font files css
-
+// This will bring in the font files for fontawesome
+// import '../css/fontawesome.scss';
 // This will bring in the svg files for fontawesome
 import setup_icons from "./svgicon";
 setup_icons();

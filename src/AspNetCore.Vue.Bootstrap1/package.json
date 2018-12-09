@@ -20,10 +20,10 @@
     "jquery": "^3.3.1",
     "metismenu": "3.0.3",
     "nprogress": "0.2.0",
-    "vue": "^2.5.18",
+    "vue": "^2.5.19",
     "vue-router": "^3.0.2",
-    "vue-server-renderer": "^2.5.18",
-    "vue-template-compiler": "^2.5.18",
+    "vue-server-renderer": "^2.5.19",
+    "vue-template-compiler": "^2.5.19",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
   },

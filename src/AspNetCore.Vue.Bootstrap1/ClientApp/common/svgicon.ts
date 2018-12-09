@@ -6,7 +6,6 @@ import { faCog, faFile, faFolder, faFolderOpen, faSpinner } from "@fortawesome/f
 
 // register the fa-icon component
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
 export default function setup_icons() {
   library.add(faSpinner, faCog, faFolder, faFolderOpen, faFile);
   Vue.component("fa-icon", FontAwesomeIcon);
