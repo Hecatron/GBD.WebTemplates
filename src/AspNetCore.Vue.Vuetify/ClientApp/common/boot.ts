@@ -1,15 +1,9 @@
-import BootstrapVue from "bootstrap-vue";
 import { Component, Vue } from "vue-property-decorator";
 import VueRouter from "vue-router";
+import Vuetify from "vuetify";
+import "vuetify/dist/vuetify.css"
 Vue.use(VueRouter);
-Vue.use(BootstrapVue);
-
-// Load in the theme / branding for Bootstrap4
-import "../css/branding/branding.css";
-import "../css/branding/branding.js";
-
-// Load in bootstrap vue controls
-import "bootstrap-vue/dist/bootstrap-vue.css";
+Vue.use(Vuetify, { iconfont: "fa" });
 
 // TODO
 // import $ from 'jquery';
@@ -19,11 +13,9 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 //     require('../css/bootstrap/material-dashboard.min.css')
 // });
 
-// This will bring in the font files for fontawesome
-// import '../css/fontawesome.scss';
 // This will bring in the svg files for fontawesome
-import setup_icons from "./svgicon";
-setup_icons();
+//import setup_icons from "./svgicon";
+//setup_icons();
 
 // Destnation routes for different urls
 import { routes } from "./routes";

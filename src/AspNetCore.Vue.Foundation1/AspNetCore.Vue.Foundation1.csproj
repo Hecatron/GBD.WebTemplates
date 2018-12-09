@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientApp\vendor\**" />
+    <Content Remove="ClientApp\vendor\**" />
+    <EmbeddedResource Remove="ClientApp\vendor\**" />
+    <None Remove="ClientApp\vendor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove=".editorconfig" />
     <None Remove=".gitignore" />
     <None Remove="ClientApp\common\eventbus.ts" />
@@ -34,7 +41,6 @@
     <TypeScriptCompile Include="ClientApp\components\dashboard\sidebar\sidebar.ts" />
     <TypeScriptCompile Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <TypeScriptCompile Include="ClientApp\components\pages\counter\counter.ts" />
-    <TypeScriptCompile Include="ClientApp\vendor\fontawesome\svgicons.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

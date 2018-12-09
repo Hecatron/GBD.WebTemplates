@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientApp\vendor\**" />
+    <Content Remove="ClientApp\vendor\**" />
+    <EmbeddedResource Remove="ClientApp\vendor\**" />
+    <None Remove="ClientApp\vendor\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove=".editorconfig" />
     <None Remove=".gitignore" />
     <None Remove="ClientApp\common\eventbus.ts" />
@@ -41,7 +48,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\css\test1\" />
-    <Folder Include="ClientApp\vendor\fontawesome\" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

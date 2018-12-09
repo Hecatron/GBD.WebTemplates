@@ -4,7 +4,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SideBarComponent extends Vue {
-    private mounted() {
-        // $('#metismenu').metisMenu();
-    }
+  private mounted() {
+    // $('#metismenu').metisMenu();
+  }
 }

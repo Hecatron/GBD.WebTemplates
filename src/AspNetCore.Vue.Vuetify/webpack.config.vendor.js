@@ -28,12 +28,9 @@ var entrypoints = {
 
 	// TODO
 	
-    // Bootstrap4 Depends
+    // Other Depends
     'jquery',
     'popper.js',
-    // Bootstrap4
-    'bootstrap/dist/js/bootstrap.js',
-    'bootstrap/dist/css/bootstrap.css',
     // Font Awesome
     './ClientApp/css/fontawesome.scss', // Font Files
     // animate.css
