@@ -1,40 +1,46 @@
 <template>
 
-    <!--TODO
-        1. add fixed-top for the navbar
-     -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-        <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Used in mobile mode -->
+        <b-btn class="navbar-toggler d-lg-none mr-auto" @click="toggle_sidebar_mobile_click">
+            <fa-icon icon="bars" style="font-size: 1em;"></fa-icon>
+        </b-btn>
 
+        <!-- Used in large mode -->
+        <b-btn class="navbar-toggler d-none d-sm-none d-md-none d-lg-block" @click="toggle_sidebar_desktop_click">
+            <fa-icon icon="bars" style="font-size: 1em;"></fa-icon>
+        </b-btn>
+
+        <a class="navbar-brand" href="#">Navbar</a>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
 
             <!--
 
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
 
-            -->
+
 
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
 
+        -->
 
         </div>
 
@@ -67,4 +73,4 @@
 </template>
 
 <script src="./topnavbar.ts"></script>
-<!--<style src="./topnavbar.scss"></style> -->
+<style lang="scss" src="./topnavbar.scss"></style>

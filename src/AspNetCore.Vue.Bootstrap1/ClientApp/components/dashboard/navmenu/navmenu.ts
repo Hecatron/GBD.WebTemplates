@@ -10,13 +10,6 @@ export default class SideBarComponent extends Vue {
     $("#sidebar-menu1").metisMenu();
   }
 
-  // TODO
-  // button to toggle the class "show" to the sidebar-nav element in mobile view
-  private ExpandMenuMobile() {
-    this.isShown = !this.isShown;
-    //this.currentcount++;
-  }
-
 }
 
 

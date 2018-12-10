@@ -4,8 +4,15 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class TopNavBarComponent extends Vue {
 
-    private toggle_sidebar_click(event: Event) {
-        // Throw an event up to the parent control
-        TopNavBarEvents.$emit("toggle-sidebar");
-    }
+  // Throw an event up to the parent control
+
+  // Used for larger non-mobile screens
+  private toggle_sidebar_desktop_click(event: Event) {
+    TopNavBarEvents.$emit("toggle-sidebar-desktop");
+  }
+
+  // Used for mobile screens
+  private toggle_sidebar_mobile_click(event: Event) {
+    TopNavBarEvents.$emit("toggle-sidebar-mobile");
+  }
 }
