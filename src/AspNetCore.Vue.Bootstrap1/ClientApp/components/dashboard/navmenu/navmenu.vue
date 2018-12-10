@@ -1,6 +1,13 @@
 <template>
   <div class="app-dashboard-navbar">
-    <nav class="sidebar-nav">
+
+
+    <b-btn @click="ExpandMenuMobile" btn-link bd-search-docs-toggle d-md-none p-0 ml-3>
+        <fa-icon icon="bars" style="font-size: 2em;"></fa-icon>
+    </b-btn>
+
+
+    <nav id="sidebar-nav" class="sidebar-nav" v-bind:class="{ show: isShown }">
       <ul id="sidebar-menu1" class="metismenu">
 
         <li class="active">
