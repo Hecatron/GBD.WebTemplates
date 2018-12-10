@@ -1,23 +1,15 @@
 <template>
   <div class="app-dashboard-navbar">
-      <b-nav class="menu sidebar-menu">
-          <b-nav-item active>Active</b-nav-item>
-          <b-nav-item>Link</b-nav-item>
-          <b-nav-item>Another Link</b-nav-item>
-          <b-nav-item disabled>Disabled</b-nav-item>
-      </b-nav>
-
-
-    <b-nav class="menu">
-      <ul id="sidebar-menu" class="sidebar-menu metismenu">
+    <nav class="sidebar-nav">
+      <ul id="sidebar-menu1" class="metismenu">
 
         <li class="active">
 
-          <a href="#" aria-expanded="true">
-            <span>Basic Examples</span>
+          <a href="#" class="has-arrow" aria-expanded="false">
+            Basic Examples
           </a>
 
-          <ul aria-expanded="true">
+          <ul aria-expanded="false">
             <li>
               <router-link tag="li" to="/counter">
                 <a>Counter Example</a>
@@ -38,11 +30,17 @@
         </li>
 
         <li>
-          <a href="#">Sub Menu Example</a>
+          <a href="#" class="has-arrow">
+              Sub Menu Example
+          </a>
+
           <ul aria-expanded="false">
             <li>
-              <a href="#">Sub Menu1 1</a>
-              <ul class="collapse">
+              <a href="#" class="has-arrow">
+                Sub Menu1 1
+              </a>
+
+              <ul aria-expanded="false">
                 <li><a href="#">Thing 1</a></li>
                 <li><a href="#">Thing 2</a></li>
                 <li><a href="#">Thing 3</a></li>
@@ -53,7 +51,7 @@
 
       </ul>
 
-    </b-nav>
+    </nav>
   </div>
 </template>
 
