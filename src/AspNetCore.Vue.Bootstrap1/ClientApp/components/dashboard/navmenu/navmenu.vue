@@ -12,33 +12,34 @@
       <ul id="sidebar-menu" class="sidebar-menu metismenu">
 
         <li class="active">
-          <a href="#" aria-expanded="true"><span>Basic Examples</span></a>
-          <ul id="menu1" class="collapse metismenu">
 
+          <a href="#" aria-expanded="true">
+            <span>Basic Examples</span>
+          </a>
+
+          <ul aria-expanded="true">
             <li>
               <router-link tag="li" to="/counter">
                 <a>Counter Example</a>
               </router-link>
             </li>
-
             <li>
               <router-link tag="li" to="/test1">
                 <a>Static Page</a>
               </router-link>
             </li>
-
             <li>
               <router-link tag="li" to="/fetchdata">
                 <a>Fetch Data Example</a>
               </router-link>
             </li>
-
           </ul>
+
         </li>
 
         <li>
           <a href="#">Sub Menu Example</a>
-          <ul class="collapse">
+          <ul aria-expanded="false">
             <li>
               <a href="#">Sub Menu1 1</a>
               <ul class="collapse">
@@ -51,6 +52,7 @@
         </li>
 
       </ul>
+
     </b-nav>
   </div>
 </template>
