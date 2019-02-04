@@ -1,0 +1,26 @@
+site_name: QuickQuery
+site_url: http://ASoftTech.github.io/QuickQuery
+repo_url: https://github.com/ASoftTech/QuickQuery
+site_description: QuickQuery - A C# .Net library writing database queries quickly
+edit_uri: edit/master/Docs/MkDocs/Docs
+
+pages:
+- Home: index.md
+
+#theme: cosmo
+theme: cyborg
+#theme: alabaster
+#theme: readthedocs
+#theme: mkdocs
+#theme: material
+
+# Overrides content within the selected theme
+theme_dir: theme
+
+markdown_extensions:
+    - smarty
+
+extra_css:
+    - css/highlight-fix.css
+    - css/highlight-custom.css
+    - css/navbarfix.css

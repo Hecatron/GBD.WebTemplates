@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "AspNetCore.Vue.Foundation1"
+		},
+		{
+			"path": "AspNetCore.Vue.Vuetify"
 		}
 	],
 	"extensions": {

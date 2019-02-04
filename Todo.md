@@ -1,12 +1,17 @@
 # TODO
 
+## Foundation template
+
+  * copy across navmenu code from bootstrap
+
 ## Bootstrap template
 
-  * Look at navmenu
-  * Look at overwrite of branding
-  * Copy in branding files
+  * Navmenu in mobile mode
   * make sure we're using the vue version of bootstrap controls
 
 ## Vuetify Template
 
   * Implement vuetify template
+  * copy across navmenu code from bootstrap
+
+## Other
