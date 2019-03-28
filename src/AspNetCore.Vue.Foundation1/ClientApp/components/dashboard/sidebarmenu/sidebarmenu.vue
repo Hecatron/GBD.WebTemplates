@@ -45,4 +45,4 @@
   </div>
 </template>
 
-<style lang="scss" src="./navmenu.scss"></style>
+<style lang="scss" src="./sidebarmenu.scss"></style>
