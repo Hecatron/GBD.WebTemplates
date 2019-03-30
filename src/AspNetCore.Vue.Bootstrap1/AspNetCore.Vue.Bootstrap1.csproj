@@ -24,7 +24,7 @@
     <None Remove="ClientApp\common\eventbus.ts" />
     <None Remove="ClientApp\common\routes.ts" />
     <None Remove="ClientApp\components\dashboard\dashboard.ts" />
-    <None Remove="ClientApp\components\dashboard\navmenu\navmenu.ts" />
+    <None Remove="ClientApp\components\dashboard\sidebarmenu\sidebarmenu.ts" />
     <None Remove="ClientApp\components\dashboard\sidebar\sidebar.ts" />
     <None Remove="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <None Remove="ClientApp\components\icon.ts" />
@@ -43,7 +43,7 @@
     <TypeScriptCompile Include="ClientApp\common\eventbus.ts" />
     <TypeScriptCompile Include="ClientApp\common\routes.ts" />
     <TypeScriptCompile Include="ClientApp\components\dashboard\dashboard.ts" />
-    <TypeScriptCompile Include="ClientApp\components\dashboard\navmenu\navmenu.ts" />
+    <TypeScriptCompile Include="ClientApp\components\dashboard\sidebarmenu\sidebarmenu.ts" />
     <TypeScriptCompile Include="ClientApp\components\dashboard\sidebar\sidebar.ts" />
     <TypeScriptCompile Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <TypeScriptCompile Include="ClientApp\components\pages\counter\counter.ts" />

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Bootstrap1",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Foundation1", "AspNetCore.Vue.Foundation1\AspNetCore.Vue.Foundation1.csproj", "{70FAA1E0-1659-46CF-9845-95B2BC5CB73D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Vuetify", "AspNetCore.Vue.Vuetify\AspNetCore.Vue.Vuetify.csproj", "{501A3B85-D955-4591-B749-302B5A051034}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Vuetify1", "AspNetCore.Vue.Vuetify1\AspNetCore.Vue.Vuetify1.csproj", "{501A3B85-D955-4591-B749-302B5A051034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

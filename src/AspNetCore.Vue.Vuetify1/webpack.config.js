@@ -30,7 +30,7 @@ function plugins() {
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"' }),
     new webpack.DllReferencePlugin({ context: __dirname, manifest: require('./wwwroot/dist/vendor-manifest.json') }),
     new VueLoaderPlugin(),
-    new VuetifyLoaderPlugin(), // TODO
+    new VuetifyLoaderPlugin(),
     new ForkTsCheckerWebpackPlugin(),
   ].concat(isDevBuild ? [
     // Plugins that apply in development builds only
