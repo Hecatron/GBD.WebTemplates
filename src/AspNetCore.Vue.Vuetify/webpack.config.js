@@ -13,6 +13,7 @@ const UglifyWebpackPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 // Entrypoints define starting points for files to be brought into the packed destination.
 // Anything referenced down the chain by these files will also be brought in
@@ -29,6 +30,7 @@ function plugins() {
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"' }),
     new webpack.DllReferencePlugin({ context: __dirname, manifest: require('./wwwroot/dist/vendor-manifest.json') }),
     new VueLoaderPlugin(),
+    new VuetifyLoaderPlugin(), // TODO
     new ForkTsCheckerWebpackPlugin(),
   ].concat(isDevBuild ? [
     // Plugins that apply in development builds only
@@ -79,6 +81,9 @@ function rules() {
         { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"] } }
       ]
     },
+
+    // Stylus (styl) files
+    { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
 
     // images
     { test: /\.(png|jpg|jpeg|gif|svg)$/, use:
