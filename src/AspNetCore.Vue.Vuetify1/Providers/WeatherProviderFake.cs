@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using AspNetCore.Vue.Vuetify.Models;
+using AspNetCore.Vue.Vuetify1.Models;
 
-namespace AspNetCore.Vue.Vuetify.Providers
+namespace AspNetCore.Vue.Vuetify1.Providers
 {
     public class WeatherProviderFake : IWeatherProvider
     {

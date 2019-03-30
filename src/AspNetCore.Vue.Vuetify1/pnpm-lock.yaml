@@ -1,10 +1,9 @@
 dependencies:
   '@fortawesome/fontawesome-free': 5.8.1
   animate.css: 3.7.0
-  jquery: 3.3.1
-  metismenu: 3.0.4
-  nprogress: 0.2.0
+  metismenujs: 1.0.3
   vue: 2.6.10
+  vue-nprogress: 0.1.5
   vue-router: 3.0.2
   vue-server-renderer: 2.6.10
   vue-template-compiler: 2.6.10
@@ -17,7 +16,6 @@ devDependencies:
   '@fortawesome/free-regular-svg-icons': 5.8.1
   '@fortawesome/free-solid-svg-icons': 5.8.1
   '@fortawesome/vue-fontawesome': 0.1.6
-  '@types/jquery': 3.3.29
   '@types/webpack-env': 1.13.9
   ajv: 6.10.0
   aspnet-webpack: 3.0.0
@@ -102,20 +100,10 @@ packages:
       vue: ~2
     resolution:
       integrity: sha512-HAGRbrOuGDwwUmCYdpzR0hhNQ3EE30dOS4JiJKcoZ+S4M210CxyU0OXCgzIg3HzK/23rlpHbV8zi9PDDZDnuIw==
-  /@types/jquery/3.3.29:
-    dependencies:
-      '@types/sizzle': 2.3.2
-    dev: true
-    resolution:
-      integrity: sha512-FhJvBninYD36v3k6c+bVk1DSZwh7B5Dpb/Pyk3HKVsiohn0nhbefZZ+3JXbWQhFyt0MxSl2jRDdGQPHeOHFXrQ==
   /@types/q/1.5.2:
     dev: true
     resolution:
       integrity: sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
-  /@types/sizzle/2.3.2:
-    dev: true
-    resolution:
-      integrity: sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
   /@types/webpack-env/1.13.9:
     dev: true
     resolution:
@@ -2655,10 +2643,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-  /jquery/3.3.1:
-    dev: false
-    resolution:
-      integrity: sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
   /js-base64/2.5.1:
     dev: true
     resolution:
@@ -2981,12 +2965,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Qkcp7P2ygktpMPh2mCQZaf3jhN6D3Z/qVZHSdWvQ+2Ef5HgRAPBO57A77+ENm0CPx2+1Ce/MYKi3ymqdfuqibw==
-  /metismenu/3.0.4:
+  /metismenujs/1.0.3:
     dev: false
-    peerDependencies:
-      jquery: ^3.3.1
+    engines:
+      node: '>=8'
     resolution:
-      integrity: sha512-eL/IcGMVlwtn0oda+ff5psD1R1meQB+5W1xX2nXdDZEgyTXGUNmLBQHte1jbNZ1XjV5MLzOJ1FAK5Cn8Fkg52g==
+      integrity: sha512-sAW2c6zu3AqOX3VDT0vhXw4lyJ2s84NfwlOAc7/xFj7N3ARgA3z6WuG8K+X58oNzrtq0iQwv//PhXI5l8vLZbQ==
   /micromatch/3.1.10:
     dependencies:
       arr-diff: 4.0.0
@@ -5373,6 +5357,14 @@ packages:
       webpack: ^4.1.0 || ^5.0.0-0
     resolution:
       integrity: sha512-x+NZ4RIthQOxcFclEcs8sXGEWqnZHodL2J9Vq+hUz+TDZzBaDIh1j3d9M2IUlTjtrHTZy4uMuRdTi8BGws7jLA==
+  /vue-nprogress/0.1.5:
+    dependencies:
+      nprogress: 0.2.0
+    dev: false
+    peerDependencies:
+      vue: '>=2'
+    resolution:
+      integrity: sha1-V0tBLxA0AS2q9GKZ1VBdWBL0BuY=
   /vue-property-decorator/8.1.0:
     dependencies:
       vue-class-component: 7.0.1
@@ -5673,7 +5665,6 @@ specifiers:
   '@fortawesome/free-regular-svg-icons': ^5.7.1
   '@fortawesome/free-solid-svg-icons': ^5.7.1
   '@fortawesome/vue-fontawesome': 0.1.6
-  '@types/jquery': ^3.3.29
   '@types/webpack-env': ^1.13.7
   ajv: ^6.8.1
   animate.css: 3.7.0
@@ -5685,11 +5676,9 @@ specifiers:
   file-loader: ^3.0.1
   fork-ts-checker-webpack-plugin: ^1.0.1
   isomorphic-fetch: ^2.2.1
-  jquery: ^3.3.1
-  metismenu: 3.0.4
+  metismenujs: 1.0.3
   node-sass: ^4.11.0
   node-sass-package-importer: ^5.3.0
-  nprogress: 0.2.0
   optimize-css-assets-webpack-plugin: 5.0.1
   popper.js: 1.14.7
   sass-loader: ^7.1.0
@@ -5703,6 +5692,7 @@ specifiers:
   url-loader: ^1.1.2
   vue: ^2.6.1
   vue-loader: ^15.6.2
+  vue-nprogress: 0.1.5
   vue-property-decorator: ^8.1.0
   vue-router: ^3.0.2
   vue-server-renderer: ^2.6.1

@@ -29,18 +29,16 @@ var entrypoints = {
 	// TODO
 	
     // Other Depends
-    'jquery',
     'popper.js',
     // Font Awesome
     './ClientApp/css/fontawesome.scss', // Font Files
     // animate.css
     'animate.css',
-    // NProgress for a progress bar along the top
-    'nprogress/nprogress.js',
-    'nprogress/nprogress.css',
-    // metisMenu
-    'metismenu/dist/metisMenu.js',
-    'metismenu/dist/metisMenu.css'
+    // vue-nprogress for a progress bar along the top
+    'vue-nprogress/dist/vue-nprogress.min.js',
+    // metismenujs
+    'metismenujs/dist/metismenujs.min.js',
+    'metismenujs/dist/metismenujs.min.css'
   ]
 };
 
@@ -51,15 +49,13 @@ function plugins() {
     // Set the NODE_ENV environment variable to production / development
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"' }),
     new webpack.DllPlugin({ path: path.join(__dirname, bundleOutputDir, '[name]-manifest.json'), name: '[name]_[hash]' }),
-    // Maps these identifiers to the jQuery package (expected to be a global variable)
-    new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }),
-    new ExtractCssChunks({ filename: 'styles/vendor.css' }),
+    new ExtractCssChunks({ filename: 'styles/vendor.css' })
   ].concat(isDevBuild ? [] : [
     // Plugins that apply in production builds only
     // Condense the CSS to as small as possible, and remove comments
     new OptimizeCssAssetsPlugin({
       cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
+        preset: ['default', { discardComments: { removeAll: true } }]
       }
     })
   ]);
@@ -101,7 +97,7 @@ function rules() {
 
 // Main webpack options
 module.exports = (env, argv) => {
-  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production')
+  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production');
   console.log('Development build: ' + isDevBuild);
 
   return [{

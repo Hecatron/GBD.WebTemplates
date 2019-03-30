@@ -1,8 +1,8 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using AspNetCore.Vue.Vuetify.Providers;
+using AspNetCore.Vue.Vuetify1.Providers;
 
-namespace AspNetCore.Vue.Vuetify.Controllers
+namespace AspNetCore.Vue.Vuetify1.Controllers
 {
     [Route("api/[controller]")]
     public class WeatherController : Controller

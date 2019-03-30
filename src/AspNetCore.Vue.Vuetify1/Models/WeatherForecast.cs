@@ -1,4 +1,4 @@
-namespace AspNetCore.Vue.Vuetify.Models
+namespace AspNetCore.Vue.Vuetify1.Models
 {
     public class WeatherForecast
     {

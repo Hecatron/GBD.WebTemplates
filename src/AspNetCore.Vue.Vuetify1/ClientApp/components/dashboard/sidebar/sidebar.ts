@@ -1,7 +1,6 @@
 import { Component, Vue } from "vue-property-decorator";
 import NavBar from "../sidebarmenu/sidebarmenu.vue";
 // import { TopNavBarEvents } from 'common/eventbus';
-// import $ from "jquery";
 
 @Component({
   components: {

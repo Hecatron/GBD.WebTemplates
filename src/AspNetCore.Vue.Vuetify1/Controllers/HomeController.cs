@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCore.Vue.Vuetify.Controllers
+namespace AspNetCore.Vue.Vuetify1.Controllers
 {
     public class HomeController : Controller
     {
