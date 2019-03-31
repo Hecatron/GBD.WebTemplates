@@ -1,10 +1,10 @@
 import { Component, Vue } from "vue-property-decorator";
-import NavBar from "../sidebarmenu/sidebarmenu.vue";
+import SideBarMenu from "../sidebarmenu/sidebarmenu.vue";
 // import { TopNavBarEvents } from 'common/eventbus';
 
 @Component({
   components: {
-    "navbar-component": NavBar,
+    "sidebarmenu-component": SideBarMenu,
   },
 })
 export default class SideBarComponent extends Vue {

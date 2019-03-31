@@ -1,5 +1,5 @@
 import { Component, Vue } from "vue-property-decorator";
-// import "metismenu"
+// import "metismenujs"
 
 @Component
 export default class SideBarMenuComponent extends Vue {

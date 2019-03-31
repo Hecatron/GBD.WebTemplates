@@ -6,7 +6,7 @@ import TopNavBar from "./topnavbar/topnavbar.vue";
 
 @Component({
   components: {
-    //"sidebar-component": SideBar,
+    "sidebar-component": SideBar,
     //"topnavbar-component": TopNavBar,
   },
 })
