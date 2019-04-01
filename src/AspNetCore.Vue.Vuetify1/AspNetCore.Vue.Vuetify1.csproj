@@ -47,6 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\css\branding\" />
     <Folder Include="ClientApp\css\test1\" />
   </ItemGroup>
 

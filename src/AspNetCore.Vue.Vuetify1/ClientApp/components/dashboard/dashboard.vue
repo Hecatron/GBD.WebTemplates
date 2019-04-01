@@ -1,37 +1,10 @@
 <template>
     <div class="app-dashboard">
         <v-app id="inspire" dark>
-            <!--<sidebar-component /> -->
-
-            <v-navigation-drawer v-model="drawer"
-                                 clipped
-                                 fixed
-                                 app>
-                <v-list dense>
-                    <v-list-tile @click="">
-                        <v-list-tile-action>
-                            <v-icon>fa-th-large</v-icon>
-                        </v-list-tile-action>
-                        <v-list-tile-content>
-                            <v-list-tile-title>Dashboard</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile @click="">
-                        <v-list-tile-action>
-                            <v-icon>fa-cog</v-icon>
-                        </v-list-tile-action>
-                        <v-list-tile-content>
-                            <v-list-tile-title>Settings</v-list-tile-title>
-                        </v-list-tile-content>
-                    </v-list-tile>
-                </v-list>
-            </v-navigation-drawer>
+            <sidebar-component ref="sidebar1"/>
+            <topnavbar-component v-on:sidebar-toggle="$refs.sidebar1.toggle_sidebar()" />
 
 
-            <v-toolbar app fixed clipped-left>
-                <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-                <v-toolbar-title>Application</v-toolbar-title>
-            </v-toolbar>
 
             <v-content>
                 <v-container fluid fill-height>
@@ -59,7 +32,7 @@
             </v-content>
 
             <v-footer app fixed>
-                <span>&copy; 2017</span>
+                <span>&copy; 2019</span>
             </v-footer>
         </v-app>
     </div>

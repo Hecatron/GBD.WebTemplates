@@ -1,13 +1,14 @@
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop, Emit } from "vue-property-decorator";
 import SideBar from "./sidebar/sidebar.vue";
 import TopNavBar from "./topnavbar/topnavbar.vue";
 
-// TODO icons next followed by sub components
+// TODO pages with links
+// TODO metismenu / scss
 
 @Component({
   components: {
     "sidebar-component": SideBar,
-    //"topnavbar-component": TopNavBar,
+    "topnavbar-component": TopNavBar,
   },
 })
 export default class DashBoardComponent extends Vue {
@@ -17,5 +18,10 @@ export default class DashBoardComponent extends Vue {
     return {
       drawer: true,
     }
+  }
+
+  // Needed for vue refs to work under typescript
+  $refs!: {
+    sidebar1: any;
   }
 }

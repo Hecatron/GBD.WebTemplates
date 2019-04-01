@@ -1,6 +1,5 @@
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop, Emit } from "vue-property-decorator";
 import SideBarMenu from "../sidebarmenu/sidebarmenu.vue";
-// import { TopNavBarEvents } from 'common/eventbus';
 
 @Component({
   components: {
@@ -8,15 +7,11 @@ import SideBarMenu from "../sidebarmenu/sidebarmenu.vue";
   },
 })
 export default class SideBarComponent extends Vue {
+  public sidebar_visible:boolean = true;
 
-  private mounted() {
-    // Handle click event from top navbar
-    // TopNavBarEvents.$on('toggle-sidebar', function () {
-    //   $('#app-dashboard-sidebar').foundation('toggle');
-    // });
-    // Open the sidebar automatically on load if the page is not on mobile
-    // if (Foundation.MediaQuery.atLeast('medium')) {
-    //   $('#app-dashboard-sidebar').foundation('open');
-    // }
+  @Emit()
+  toggle_sidebar() {
+    this.sidebar_visible = !this.sidebar_visible;
   }
+
 }
