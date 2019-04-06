@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Root",
+			"path": "."
+		},
+		{
+			"path": "PythonFlask.Vue.Bootstrap1.Electron"
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"donjayamanne.python-extension-pack",
+			"hbenl.vscode-firefox-debug"
+		],
+		"unwantedRecommendations": []
+	}
+}
