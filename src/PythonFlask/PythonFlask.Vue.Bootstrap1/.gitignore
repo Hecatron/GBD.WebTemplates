@@ -100,3 +100,6 @@ venv.bak/
 # scons files
 .sconsign.dblite
 /.vscode/temp
+
+# installed npm packages
+/node_modules
