@@ -1,8 +1,8 @@
 <template>
     <div class="app-dashboard">
         <v-app id="inspire" dark>
-            <sidebar-component ref="sidebar1"/>
-            <topnavbar-component v-on:sidebar-toggle="$refs.sidebar1.toggle_sidebar()" />
+            <sidebar-component ref="sidebar1" app/>
+            <topnavbar-component v-on:sidebar-toggle="toggle_sidebar()" app/>
 
 
 

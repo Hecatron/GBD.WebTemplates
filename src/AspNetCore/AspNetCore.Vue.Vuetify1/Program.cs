@@ -3,8 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace AspNetCore.Vue.Vuetify1
 {
-    public class Program
-    {
+    public class Program {
         public static void Main(string[] args) {
             CreateWebHostBuilder(args).Build().Run();
         }
