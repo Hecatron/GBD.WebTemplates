@@ -1,13 +1,19 @@
 <template>
-  <div>
-    <h1>Counter</h1>
+    <v-container fluid fill-height>
+        <v-layout>
+            <v-flex shrink>
 
-    <p>This is a simple example of a Vue.js component. <fa-icon icon="cog"></fa-icon></p>
+                <h1>Counter</h1>
 
-    <p>Current count: <strong>{{ currentcount }}</strong></p>
+                <p>This is a simple example of a Vue.js component. <fa-icon icon="cog"></fa-icon></p>
 
-    <b-btn @click="incrementCounter">Increment</b-btn>
-  </div>
+                <p>Current count: <strong>{{ currentcount }}</strong></p>
+
+                <v-btn @click="incrementCounter">Increment</v-btn>
+
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script src="./counter.ts"></script>

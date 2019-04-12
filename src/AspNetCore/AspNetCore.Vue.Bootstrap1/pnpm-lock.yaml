@@ -2,12 +2,12 @@ dependencies:
   '@fortawesome/fontawesome-free': 5.8.1
   animate.css: 3.7.0
   bootstrap: 4.3.1
-  bootstrap-vue: 2.0.0-rc.16
-  jquery: 3.3.1
+  bootstrap-vue: 2.0.0-rc.18
+  jquery: 3.4.0
   metismenu: 3.0.4
   nprogress: 0.2.0
   vue: 2.6.10
-  vue-router: 3.0.2
+  vue-router: 3.0.4
   vue-server-renderer: 2.6.10
   vue-template-compiler: 2.6.10
   vuex: 3.1.0
@@ -27,7 +27,7 @@ devDependencies:
   event-source-polyfill: 1.0.5
   extract-css-chunks-webpack-plugin: 4.3.0
   file-loader: 3.0.1
-  fork-ts-checker-webpack-plugin: 1.0.1
+  fork-ts-checker-webpack-plugin: 1.0.2
   isomorphic-fetch: 2.2.1
   node-sass: 4.11.0
   node-sass-package-importer: 5.3.1
@@ -37,7 +37,7 @@ devDependencies:
   style-loader: 0.23.1
   ts-loader: 5.3.3
   tslint: 5.15.0
-  typescript: 3.4.2
+  typescript: 3.4.3
   uglifyjs-webpack-plugin: 2.1.2
   url-loader: 1.1.2
   vue-loader: 15.7.0
@@ -100,10 +100,10 @@ packages:
       vue: ~2
     resolution:
       integrity: sha512-HAGRbrOuGDwwUmCYdpzR0hhNQ3EE30dOS4JiJKcoZ+S4M210CxyU0OXCgzIg3HzK/23rlpHbV8zi9PDDZDnuIw==
-  /@nuxt/opencollective/0.2.1:
+  /@nuxt/opencollective/0.2.2:
     dependencies:
       chalk: 2.4.2
-      consola: 2.5.8
+      consola: 2.6.0
       node-fetch: 2.3.0
     dev: false
     engines:
@@ -111,7 +111,7 @@ packages:
       npm: '>=5.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-NP2VSUKRFGutbhWeKgIU0MnY4fmpH8UWxxwTJNPurCQ5BeWhOxp+Gp5ltO39P/Et/J2GYGb3+ALNqZJ+5cGBBw==
+      integrity: sha512-ie50SpS47L+0gLsW4yP23zI/PtjsDRglyozX2G09jeiUazC1AJlGPZo0JUs9iuCDUoIgsDEf66y7/bSfig0BpA==
   /@types/jquery/3.3.29:
     dependencies:
       '@types/sizzle': 2.3.2
@@ -566,16 +566,16 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap-vue/2.0.0-rc.16:
+  /bootstrap-vue/2.0.0-rc.18:
     dependencies:
-      '@nuxt/opencollective': 0.2.1
-      bootstrap: 4.3.1_popper.js@1.14.7
-      popper.js: 1.14.7
+      '@nuxt/opencollective': 0.2.2
+      bootstrap: 4.3.1_popper.js@1.15.0
+      popper.js: 1.15.0
       vue-functional-data-merge: 2.0.7
     dev: false
     requiresBuild: true
     resolution:
-      integrity: sha512-fhiyqG6i3ITF7fAzAjMexikGUgBZ/GTKQi0mCK48FacB5tiq2KUXE0Qilb/CW090PkqEw2W+7AP2/k5/dAa/MQ==
+      integrity: sha512-pxPIQFAfqCuoPt1IT5nOjece/vuN5H3kxpLQSHHxmtcNs6HV6nqoRjuofHirAlwlONJC7etdylLP8YS3xPYqOg==
   /bootstrap/4.3.1:
     dev: false
     engines:
@@ -585,9 +585,9 @@ packages:
       popper.js: ^1.14.7
     resolution:
       integrity: sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
-  /bootstrap/4.3.1_popper.js@1.14.7:
+  /bootstrap/4.3.1_popper.js@1.15.0:
     dependencies:
-      popper.js: 1.14.7
+      popper.js: 1.15.0
     dev: false
     engines:
       node: '>=6'
@@ -1039,10 +1039,10 @@ packages:
       node: '>= 0.10.0'
     resolution:
       integrity: sha1-Ce/2xVr3I24TcTWnJXSFi2eG9SQ=
-  /consola/2.5.8:
+  /consola/2.6.0:
     dev: false
     resolution:
-      integrity: sha512-fYv1M0rNJw4h0CZUx8PX02Px7xQhA+vNHpV8DBCGMoozp2Io/vrSXhhEothaRnSt7VMR0rj2pt9KKLXa5amrCw==
+      integrity: sha512-jge0Ip1NVoOafxZq1zxG1sLYVBtKV45BF39VV6YKSWb45nyLOHY51YP0+cBQ2DyOTKhCjtF0XrRJkjTvX4wzgQ==
   /console-browserify/1.1.0:
     dependencies:
       date-now: 0.1.4
@@ -1920,7 +1920,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
-  /fork-ts-checker-webpack-plugin/1.0.1:
+  /fork-ts-checker-webpack-plugin/1.0.2:
     dependencies:
       babel-code-frame: 6.26.0
       chalk: 2.4.2
@@ -1928,12 +1928,12 @@ packages:
       micromatch: 3.1.10
       minimatch: 3.0.4
       semver: 5.7.0
-      tapable: 1.1.1
+      tapable: 1.1.3
     dev: true
     engines:
       node: '>=6.11.5'
     resolution:
-      integrity: sha512-RrVxSiNtngsFDLQpP2QlrVaJK1zqRdwhtwslmDUWQTg3t3GW8QN7D3EpW/EAI+oqTqL0dGvLyluyYQ/eIrIHvQ==
+      integrity: sha512-DAyBgXAoJoSTXK8LSTvNgYJE+PmawnIyh2qZUfV5vB237ARuyEEq/H1y0i9UdhXLY6QlCH+5LojGyaHwD9W2RA==
   /form-data/2.3.3:
     dependencies:
       asynckit: 0.4.0
@@ -2677,10 +2677,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-  /jquery/3.3.1:
+  /jquery/3.4.0:
     dev: false
     resolution:
-      integrity: sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
+      integrity: sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
   /js-base64/2.5.1:
     dev: true
     resolution:
@@ -3749,12 +3749,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
-  /popper.js/1.14.7:
-    dev: false
-    resolution:
-      integrity: sha512-4q1hNvoUre/8srWsH7hnoSJ5xVmIL4qgz+s4qf2TnJIMyZFUFMGH+9vE7mXynAlHSZ/NdTmmow86muD0myUkVQ==
   /popper.js/1.15.0:
-    dev: true
     resolution:
       integrity: sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
   /posix-character-classes/0.1.1:
@@ -4978,6 +4973,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-9I2ydhj8Z9veORCw5PRm4u9uebCn0mcCa6scWoNcbZ6dAtoo2618u9UUzxgmsCOreJpqDDuv61LvwofW7hLcBA==
+  /tapable/1.1.3:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
   /tar/2.2.1:
     dependencies:
       block-stream: 0.0.9
@@ -5160,13 +5161,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.4.2:
+  /typescript/3.4.3:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-Og2Vn6Mk7JAuWA1hQdDQN/Ekm/SchX80VzLhjKN9ETYrIepBFAd8PkOdOTK2nKt0FCkmMZKBJvQ1dV1gIxPu/A==
+      integrity: sha512-FFgHdPt4T/duxx6Ndf7hwgMZZjZpB+U0nMNGVCYPq0rEzWKjEDobm4J6yb3CS7naZ0yURFqdw9Gwc7UOh/P9oQ==
   /uglify-js/3.5.2:
     dependencies:
       commander: 2.19.0
@@ -5391,10 +5392,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-TUWpbadApSW/sx9hlbrUq092ULm4E3RkL5X4fFhkiJ88/Y99lVubjh3bd3VbFQ8JRlKaTeqMOKaFHQRzWBCFPg==
-  /vue-router/3.0.2:
+  /vue-router/3.0.4:
     dev: false
     resolution:
-      integrity: sha512-opKtsxjp9eOcFWdp6xLQPLmRGgfM932Tl56U9chYTnoWqKxQ8M20N7AkdEbM5beUh6wICoFGYugAX9vQjyJLFg==
+      integrity: sha512-wjirAFeMR53FFTRIM2ofLKH5BJte6Q9+MUiOj6fLzqhgerjVyQVeMmvgiQDslPJJHSqFfQ559EDvIi0lA1Lr6g==
   /vue-server-renderer/2.6.10:
     dependencies:
       chalk: 1.1.3
@@ -5671,15 +5672,15 @@ specifiers:
   animate.css: 3.7.0
   aspnet-webpack: ^3.0.0
   bootstrap: 4.3.1
-  bootstrap-vue: 2.0.0-rc.16
+  bootstrap-vue: 2.0.0-rc.18
   cross-env: ^5.2.0
   css-loader: ^2.1.0
   event-source-polyfill: ^1.0.5
   extract-css-chunks-webpack-plugin: 4.3.0
   file-loader: ^3.0.1
-  fork-ts-checker-webpack-plugin: ^1.0.1
+  fork-ts-checker-webpack-plugin: ^1.0.2
   isomorphic-fetch: ^2.2.1
-  jquery: ^3.3.1
+  jquery: ^3.4.0
   metismenu: 3.0.4
   node-sass: ^4.11.0
   node-sass-package-importer: ^5.3.0
@@ -5690,13 +5691,13 @@ specifiers:
   style-loader: ^0.23.1
   ts-loader: 5.3.3
   tslint: ^5.15.0
-  typescript: ^3.4.2
+  typescript: ^3.4.3
   uglifyjs-webpack-plugin: 2.1.2
   url-loader: ^1.1.2
   vue: ^2.6.1
   vue-loader: ^15.6.2
   vue-property-decorator: ^8.1.0
-  vue-router: ^3.0.2
+  vue-router: ^3.0.4
   vue-server-renderer: ^2.6.1
   vue-style-loader: 4.1.2
   vue-template-compiler: ^2.6.1

@@ -1,30 +1,38 @@
 <template>
-    <div>
-        <h1>Weather forecast</h1>
+    <v-container fluid fill-height>
+        <v-layout>
+            <v-flex shrink>
 
-        <p>This component demonstrates fetching data from the server.</p>
+                <div>
+                    <h1>Weather forecast</h1>
 
-        <table v-if="forecasts.length" class="table">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="item in forecasts">
-                    <td>{{ item.dateFormatted }}</td>
-                    <td>{{ item.temperatureC }}</td>
-                    <td>{{ item.temperatureF }}</td>
-                    <td>{{ item.summary }}</td>
-                </tr>
-            </tbody>
-        </table>
+                    <p>This component demonstrates fetching data from the server.</p>
 
-        <p v-else><em>Loading...</em></p>
-    </div>
+                    <table v-if="forecasts.length" class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Temp. (C)</th>
+                                <th>Temp. (F)</th>
+                                <th>Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="item in forecasts">
+                                <td>{{ item.dateFormatted }}</td>
+                                <td>{{ item.temperatureC }}</td>
+                                <td>{{ item.temperatureF }}</td>
+                                <td>{{ item.summary }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p v-else><em>Loading...</em></p>
+                </div>
+
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script src="./fetchdata.ts"></script>
