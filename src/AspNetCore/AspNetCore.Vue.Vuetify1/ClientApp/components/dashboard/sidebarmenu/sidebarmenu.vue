@@ -91,4 +91,4 @@
 </template>
 
 <script src="./sidebarmenu.ts"></script>
-<!--<style lang="scss" src="./sidebarmenu.scss"></style>-->
+<style lang="scss" src="./sidebarmenu.scss"></style>

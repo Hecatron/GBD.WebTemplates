@@ -19,4 +19,3 @@
 </template>
 
 <script src="./dashboard.ts"></script>
-<!-- <style lang="scss" src="./dashboard.scss"></style> -->

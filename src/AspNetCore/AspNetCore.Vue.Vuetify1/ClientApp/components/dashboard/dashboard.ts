@@ -4,10 +4,8 @@ import TopNavBar from "./topnavbar/topnavbar.vue";
 import SideBarComponent from "./sidebar/sidebar"
 
 // TODO
-// pages with links
 // metismenu / scss
 // size when menu switches over
-// update docs with links
 
 @Component({
   components: {
@@ -16,14 +14,6 @@ import SideBarComponent from "./sidebar/sidebar"
   },
 })
 export default class DashBoardComponent extends Vue {
-  @Prop() source!: string;
-
-  data() {
-    return {
-      drawer: true,
-    }
-  }
-
   // Needed for vue refs to work under typescript
   $refs!: {
     sidebar1: SideBarComponent;

@@ -12,4 +12,3 @@
 </template>
 
 <script src="./sidebar.ts"></script>
-<!--<style src="./sidebar.scss"></style> -->

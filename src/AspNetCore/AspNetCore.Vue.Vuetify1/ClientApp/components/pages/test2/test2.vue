@@ -26,3 +26,4 @@
         </v-layout>
     </v-container>
 </template>
+<script src="./test2.ts"></script>
