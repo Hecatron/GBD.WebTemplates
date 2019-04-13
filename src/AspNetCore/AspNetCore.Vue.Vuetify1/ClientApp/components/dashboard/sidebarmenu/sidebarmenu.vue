@@ -1,94 +1,74 @@
 <template>
+
     <div class="app-dashboard-sidebarmenu">
 
 
-        <!--
-        TODO
+            <v-list>
 
-        <v-list dense>
-            <v-list-tile @click="">
-                <v-list-tile-action>
-                    <v-icon>fa-th-large</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                    <v-list-tile-title>Dashboard</v-list-tile-title>
-                </v-list-tile-content>
-            </v-list-tile>
-            <v-list-tile @click="">
-                <v-list-tile-action>
-                    <v-icon>fa-cog</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                    <v-list-tile-title>Settings</v-list-tile-title>
-                </v-list-tile-content>
-            </v-list-tile>
-        </v-list>
+                <v-list-group prepend-icon="fa-cog" value="true">
 
+                    <template v-slot:activator>
+                        <v-list-tile>
+                            <v-list-tile-title>Basic Examples</v-list-tile-title>
+                        </v-list-tile>
+                    </template>
 
-        -->
+                    <v-list-tile to="/counter">
+                        <v-list-tile-title>Counter Example</v-list-tile-title>
+                    </v-list-tile>
 
+                    <v-list-tile to="/fetchdata">
+                        <v-list-tile-title>Fetch Data Example</v-list-tile-title>
+                        <v-list-tile-action>
+                            <v-icon>fa-cog</v-icon>
+                        </v-list-tile-action>
+                    </v-list-tile>
 
+                    <v-list-tile to="/test1">
+                        <v-list-tile-title>Test1</v-list-tile-title>
+                    </v-list-tile>
 
-        <ul id="sidebar-menu1" class="metismenu">
+                    <v-list-tile to="/test2">
+                        <v-list-tile-title>Test2</v-list-tile-title>
+                    </v-list-tile>
 
-            <li class="active">
+                </v-list-group>
 
-                <a href="#" class="has-arrow" aria-expanded="false">
-                    Basic Examples
-                </a>
+                <v-list-group>
 
-                <ul aria-expanded="false">
-                    <li>
-                        <router-link tag="li" to="/counter">
-                            <a>Counter Example</a>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link tag="li" to="/fetchdata">
-                            <a>Fetch Data Example</a>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link tag="li" to="/test1">
-                            <a>Test1</a>
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link tag="li" to="/test2">
-                            <a>Test2</a>
-                        </router-link>
-                    </li>
-                </ul>
+                    <template v-slot:activator>
+                        <v-list-tile>
+                            <v-list-tile-title>Sub Menu Example</v-list-tile-title>
+                        </v-list-tile>
+                    </template>
 
-            </li>
+                    <v-list-group sub-group no-action>
 
-            <li>
-                <a href="#" class="has-arrow">
-                    Sub Menu Example
-                </a>
+                        <template v-slot:activator>
+                            <v-list-tile>
+                                <v-list-tile-title>Sub Menu1 1</v-list-tile-title>
+                            </v-list-tile>
+                        </template>
 
-                <ul aria-expanded="false">
-                    <li>
-                        <a href="#" class="has-arrow">
-                            Sub Menu1 1
-                        </a>
+                        <v-list-tile>
+                            <v-list-tile-title>Thing1</v-list-tile-title>
+                        </v-list-tile>
 
-                        <ul aria-expanded="false">
-                            <li><a href="#">Thing 1</a></li>
-                            <li><a href="#">Thing 2</a></li>
-                            <li><a href="#">Thing 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
+                        <v-list-tile>
+                            <v-list-tile-title>Thing2</v-list-tile-title>
+                        </v-list-tile>
 
-        </ul>
+                        <v-list-tile>
+                            <v-list-tile-title>Thing3</v-list-tile-title>
+                        </v-list-tile>
 
+                    </v-list-group>
 
+                </v-list-group>
 
+            </v-list>
 
     </div>
 </template>
 
 <script src="./sidebarmenu.ts"></script>
-<style lang="scss" src="./sidebarmenu.scss"></style>
