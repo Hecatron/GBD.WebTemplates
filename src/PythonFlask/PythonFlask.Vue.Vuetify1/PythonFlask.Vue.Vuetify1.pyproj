@@ -36,7 +36,6 @@
     <Compile Include="ServerApp\Models\WeatherForecast.py" />
     <Compile Include="ServerApp\Models\__init__.py" />
     <Compile Include="ServerApp\Providers\__init__.py" />
-    <Compile Include="ServerApp\views.py" />
     <Compile Include="ServerApp\__init__.py" />
   </ItemGroup>
   <ItemGroup>
