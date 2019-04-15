@@ -10,7 +10,7 @@ from os import path
 app = Flask(
     __name__,
     template_folder="Views",
-    static_folder=path.abspath('wwwroot'),
-    static_url_path='/static')
+    static_folder=path.abspath('wwwroot/dist'),
+    static_url_path='/dist')
 
 import ServerApp.Controllers

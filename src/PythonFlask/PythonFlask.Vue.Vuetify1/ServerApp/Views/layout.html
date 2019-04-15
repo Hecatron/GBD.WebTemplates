@@ -6,13 +6,13 @@
     <title>{{ title }}</title>
     <base href="/" />
 
-    <link rel="stylesheet" href="/static/dist/styles/vendor.css" />
+    <link rel="stylesheet" href="/dist/styles/vendor.css" />
     {# Needs to be conditional include (not included) if development
-    <link rel="stylesheet" href="/static/dist/styles/site.css" /> #}
+    <link rel="stylesheet" href="/dist/styles/site.css" /> #}
 </head>
 <body>
     {% block content %}{% endblock %}
-    <script src="/static/dist/vendor.js"></script>
+    <script src="/dist/vendor.js"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>
