@@ -1,6 +1,5 @@
 from ServerApp.MicroWebSrv.microWebSrv import MicroWebSrv
-
-from ServerApp import jinjaenv
+from ServerApp.MicroWebSrv import jinjaenv
 
 @MicroWebSrv.route('/')
 def home(httpClient, httpResponse):
