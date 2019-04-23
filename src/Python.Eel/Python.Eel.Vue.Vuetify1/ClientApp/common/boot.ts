@@ -14,7 +14,6 @@ Vue.use(Vuetify, { iconfont: "fa" });
 // Destination routes for different urls
 import { routes } from "./routes";
 
-
 // Root component
 @Component({
     render: (h: any) => h(require("../components/dashboard/dashboard.vue").default),
@@ -25,3 +24,5 @@ export default class BootComponent extends Vue {
 
 // see https://vuejs.org/v2/api/#vm-mount for root component
 new BootComponent().$mount("#app-root");
+
+import "./eel_test";

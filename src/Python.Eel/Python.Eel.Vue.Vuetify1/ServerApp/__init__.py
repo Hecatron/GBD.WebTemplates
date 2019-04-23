@@ -16,7 +16,7 @@ class EelServer(object):
 
     def __init__(self, develop):
         """Class Initializer"""
-        self.Port = 5555
+        self.Port = 8080
         self.Develop = develop
 
     def get_free_port(self):
@@ -37,7 +37,8 @@ class EelServer(object):
             flags = ['--auto-open-devtools-for-tabs']
         else:
             directory = 'wwwroot'
-            app = 'chrome-app'
+            #app = 'chrome-app'
+            app = None
             page = 'index.html'
             flags = []
 

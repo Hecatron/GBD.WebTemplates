@@ -12,7 +12,7 @@
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
-    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <WebBrowserUrl>http://localhost:8080/index.html</WebBrowserUrl>
     <OutputPath>.</OutputPath>
     <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
     <Name>Python.Eel.Vue.Vuetify1</Name>
@@ -40,6 +40,37 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".filenesting.json" />
+    <Content Include="ClientApp\common\boot.ts" />
+    <Content Include="ClientApp\common\eel_test.ts" />
+    <Content Include="ClientApp\common\eventbus.ts" />
+    <Content Include="ClientApp\common\routes.ts" />
+    <Content Include="ClientApp\common\svgicon.ts" />
+    <Content Include="ClientApp\components\dashboard\dashboard.ts" />
+    <Content Include="ClientApp\components\dashboard\dashboard.vue" />
+    <Content Include="ClientApp\components\dashboard\sidebarmenu\sidebarmenu.ts" />
+    <Content Include="ClientApp\components\dashboard\sidebarmenu\sidebarmenu.vue" />
+    <Content Include="ClientApp\components\dashboard\sidebar\sidebar.ts" />
+    <Content Include="ClientApp\components\dashboard\sidebar\sidebar.vue" />
+    <Content Include="ClientApp\components\dashboard\topnavbar\topnavbar.scss" />
+    <Content Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
+    <Content Include="ClientApp\components\dashboard\topnavbar\topnavbar.vue" />
+    <Content Include="ClientApp\components\pages\counter\counter.ts" />
+    <Content Include="ClientApp\components\pages\counter\counter.vue" />
+    <Content Include="ClientApp\components\pages\fetchdata\fetchdata.ts" />
+    <Content Include="ClientApp\components\pages\fetchdata\fetchdata.vue" />
+    <Content Include="ClientApp\components\pages\home.vue" />
+    <Content Include="ClientApp\components\pages\test1\test1.vue" />
+    <Content Include="ClientApp\components\pages\test2\test2.ts" />
+    <Content Include="ClientApp\components\pages\test2\test2.vue" />
+    <Content Include="ClientApp\css\fontawesome.scss" />
+    <Content Include="ClientApp\css\foundation\app.scss" />
+    <Content Include="ClientApp\css\foundation\_settings.scss" />
+    <Content Include="ClientApp\css\foundation\_site.scss" />
+    <Content Include="ClientApp\css\test\test1.scss" />
+    <Content Include="ClientApp\css\test\test2.css" />
+    <Content Include="ClientApp\types\shims-tsx.d.ts" />
+    <Content Include="ClientApp\types\shims-vue.d.ts" />
+    <Content Include="ClientApp\types\vue-fontawesome.d.ts" />
     <Content Include="package.json" />
     <Content Include="pnpm-lock.yaml" />
     <Content Include="ServerApp\Views\home.html" />
@@ -60,6 +91,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ClientApp\" />
+    <Folder Include="ClientApp\common\" />
+    <Folder Include="ClientApp\components\" />
+    <Folder Include="ClientApp\components\dashboard\" />
+    <Folder Include="ClientApp\components\dashboard\sidebarmenu\" />
+    <Folder Include="ClientApp\components\dashboard\sidebar\" />
+    <Folder Include="ClientApp\components\dashboard\topnavbar\" />
+    <Folder Include="ClientApp\components\pages\" />
+    <Folder Include="ClientApp\components\pages\counter\" />
+    <Folder Include="ClientApp\components\pages\fetchdata\" />
+    <Folder Include="ClientApp\components\pages\test1\" />
+    <Folder Include="ClientApp\components\pages\test2\" />
+    <Folder Include="ClientApp\css\" />
+    <Folder Include="ClientApp\css\branding\" />
+    <Folder Include="ClientApp\css\foundation\" />
+    <Folder Include="ClientApp\css\test\" />
+    <Folder Include="ClientApp\types\" />
     <Folder Include="ServerApp\" />
     <Folder Include="ServerApp\Controllers\" />
     <Folder Include="ServerApp\Models\" />

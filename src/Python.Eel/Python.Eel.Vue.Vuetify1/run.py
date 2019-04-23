@@ -16,7 +16,7 @@ if __name__ == '__main__':
     # Pass any second argument to enable debugging. Production distribution can't receive arguments
     developmode = len(sys.argv) == 2
     server = EelServer(developmode)
-    server.get_free_port()
+    #server.get_free_port()
     server.start()
 
     #mws._srvAddr = ('0.0.0.0', PORT)
