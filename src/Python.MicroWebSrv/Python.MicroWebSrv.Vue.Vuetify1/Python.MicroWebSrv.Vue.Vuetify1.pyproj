@@ -106,6 +106,7 @@
     <Content Include="package.json" />
     <Content Include="pnpm-lock.yaml" />
     <Content Include="ServerApp\Views\home.html" />
+    <Content Include="ServerApp\Views\home.pyhtml" />
     <Content Include="ServerApp\Views\layout.html" />
     <Content Include="tsconfig.json" />
     <Content Include="webpack.config.js" />

@@ -1,11 +1,11 @@
-from jinja2 import Environment, PackageLoader, select_autoescape
+#from jinja2 import Environment, PackageLoader, select_autoescape
 from ServerApp.MicroWebSrv.microWebSrv import MicroWebSrv
 
 # Create a template loader for jinja2 based templates within the View directory
-jinjaenv = Environment(
-    loader=PackageLoader('ServerApp', 'Views'),
-    autoescape=select_autoescape(['html', 'xml'])
-)
+#jinjaenv = Environment(
+#    loader=PackageLoader('ServerApp', 'Views'),
+#    autoescape=select_autoescape(['html', 'xml'])
+#)
 
 # Add Font mime types
 MicroWebSrv._mimeTypes['.eot'] = 'application/vnd.ms-fontobject'

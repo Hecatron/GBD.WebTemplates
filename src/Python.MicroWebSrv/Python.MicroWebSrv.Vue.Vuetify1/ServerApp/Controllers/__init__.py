@@ -1,6 +1,6 @@
 
 import ServerApp.Controllers.HomeController
-import ServerApp.Controllers.SampleDataController
+#import ServerApp.Controllers.SampleDataController
 
 # TODO
 #import ServerApp.Controllers.WeatherController

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sites", "sites", "{C7EDC477-0E3A-4673-94EC-5CF4F87ACC60}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonMicroWebSrv.Vue.Vuetify1", "PythonMicroWebSrv.Vue.Vuetify1\PythonMicroWebSrv.Vue.Vuetify1.pyproj", "{584B6CD0-93BE-4CE1-92CF-B18BF3AD10E2}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python.MicroWebSrv.Vue.Vuetify1", "Python.MicroWebSrv.Vue.Vuetify1\Python.MicroWebSrv.Vue.Vuetify1.pyproj", "{584B6CD0-93BE-4CE1-92CF-B18BF3AD10E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
