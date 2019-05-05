@@ -9,7 +9,7 @@ var isDevBuild = true;
 
 // Plugins
 const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
-const UglifyWebpackPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 // Entrypoints define starting points for files to be brought into the packed destination.
@@ -119,9 +119,9 @@ module.exports = (env, argv) => {
       filename: '[name].js',
       library: '[name]_[hash]'
     },
-    // Uglify options for shrinking js files for production
+    // Terser options for shrinking js files for production
     optimization: {
-      minimizer: [new UglifyWebpackPlugin({ sourceMap: true })]
+      minimizer: [new TerserPlugin({ sourceMap: true })]
     }
   }];
 };

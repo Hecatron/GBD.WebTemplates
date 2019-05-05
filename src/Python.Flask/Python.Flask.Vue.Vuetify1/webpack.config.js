@@ -9,7 +9,7 @@ var isDevBuild = true;
 
 // Plugins
 const ExtractCssChunks = require("extract-css-chunks-webpack-plugin")
-const UglifyWebpackPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
@@ -132,9 +132,9 @@ module.exports = (env, argv) => {
       publicPath: '/dist/',
       filename: '[name].js'
     },
-    // Uglify options for shrinking js files for production
+    // Terser options for shrinking js files for production
     optimization: {
-      minimizer: [new UglifyWebpackPlugin({ sourceMap: true })]
+      minimizer: [new TerserPlugin({ sourceMap: true })]
     }
   }];
 };
