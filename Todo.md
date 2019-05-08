@@ -28,3 +28,15 @@
     https://microwebsrv.hc2.fr/
     microwebsrv
 
+
+## Upgrading version of .netcore app / ASP Net App
+
+  * Open up visual studio 2019 Community
+  * Select View -> Other Windows -> Package Manager Console
+  * Enter in
+
+```
+change the project in the drop down
+Install-Package Microsoft.AspNetCore.App -Version 2.2.4
+Install-Package Microsoft.NETCore.App -Version 2.2.4
+```

@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,6 +48,10 @@
     <TypeScriptCompile Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <TypeScriptCompile Include="ClientApp\components\pages\counter\counter.ts" />
     <TypeScriptCompile Include="ClientApp\common\svgicon.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.4" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
