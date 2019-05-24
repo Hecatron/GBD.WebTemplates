@@ -1,0 +1,129 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "5bbc4c17d1d59576ac41d136d5fcb8fc1d6d9eb1"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Chromely.CefGlue.Winapi/4.0.70.0": {
+        "dependencies": {
+          "Chromely.CefGlue": "4.0.70",
+          "Chromely.Core": "4.0.0",
+          "NETStandard.Library": "2.0.3",
+          "WinApi": "4.0.0"
+        },
+        "runtime": {
+          "Chromely.CefGlue.Winapi.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NetCoreEx.BinaryExtensions/3.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.4/NetCoreEx.BinaryExtensions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "NetCoreEx.Geometry/3.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.4/NetCoreEx.Geometry.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "WinApi/4.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "NetCoreEx.BinaryExtensions": "3.0.0",
+          "NetCoreEx.Geometry": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.4/WinApi.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Chromely.CefGlue/4.0.70": {
+        "dependencies": {
+          "Chromely.Core": "4.0.0"
+        },
+        "runtime": {
+          "Chromely.CefGlue.dll": {}
+        }
+      },
+      "Chromely.Core/4.0.0": {
+        "runtime": {
+          "Chromely.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Chromely.CefGlue.Winapi/4.0.70.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NetCoreEx.BinaryExtensions/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eQlOlEwY5+Or7dtNsKkjXzpKoC6R+YgYbP+98wF6nI/JwUJlpg2ps/PUS0NBPiJIjt+CkEfkcj11eT1t3MqIWg==",
+      "path": "netcoreex.binaryextensions/3.0.0",
+      "hashPath": "netcoreex.binaryextensions.3.0.0.nupkg.sha512"
+    },
+    "NetCoreEx.Geometry/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ljLHSdnn5iHbIIm+smcxF2l3ngzyVrIfVGo0IPjxwgrFMV3pTochPoboA57ANTmYwB06o3lMTSS5c87CiOXTEg==",
+      "path": "netcoreex.geometry/3.0.0",
+      "hashPath": "netcoreex.geometry.3.0.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "WinApi/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xHdXd5/BLrVik4tHI59zVGsagJba+tE73qJpJc+YcfYdTg34I6kiggZcj1cRQwqPo9rz5kCEV2dX5t/Mte76Tg==",
+      "path": "winapi/4.0.0",
+      "hashPath": "winapi.4.0.0.nupkg.sha512"
+    },
+    "Chromely.CefGlue/4.0.70": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Chromely.Core/4.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
