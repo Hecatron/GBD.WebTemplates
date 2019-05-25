@@ -1,10 +1,9 @@
-using AspNetCore.Vue.Vuetify1.Models;
+using AspNetCore.Vue.Vuetify1.ElectronNet.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AspNetCore.Vue.Vuetify1.Providers {
-
+namespace AspNetCore.Vue.Vuetify1.ElectronNet.Providers {
     /// <summary> Weather Provider. </summary>
     public class WeatherProviderFake : IWeatherProvider {
         private readonly string[] summaries = {

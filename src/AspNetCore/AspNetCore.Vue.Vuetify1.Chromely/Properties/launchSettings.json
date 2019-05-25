@@ -20,7 +20,7 @@
         "ASPNETCORE_CHROMELY": "false"
       }
     },
-    "Web Local": {
+    "Console": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

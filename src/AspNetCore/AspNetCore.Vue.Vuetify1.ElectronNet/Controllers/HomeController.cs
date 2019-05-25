@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace AspNetCore.Vue.Vuetify1.Chromely.Controllers {
+namespace AspNetCore.Vue.Vuetify1.ElectronNet.Controllers {
 
     /// <summary> Home Controller. </summary>
     public class HomeController : Controller {

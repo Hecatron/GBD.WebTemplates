@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AspNetCore.Vue.Bootstrap1": {
+    "Console": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

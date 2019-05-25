@@ -1,7 +1,7 @@
-using AspNetCore.Vue.Vuetify1.Chromely.Models;
+using AspNetCore.Vue.Vuetify1.ElectronNet.Models;
 using System.Collections.Generic;
 
-namespace AspNetCore.Vue.Vuetify1.Chromely.Providers {
+namespace AspNetCore.Vue.Vuetify1.ElectronNet.Providers {
 
     /// <summary> Interface for weather provider. </summary>
     public interface IWeatherProvider {

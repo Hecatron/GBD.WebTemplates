@@ -1,10 +1,10 @@
-using AspNetCore.Vue.Vuetify1.Chromely.Models;
+using AspNetCore.Vue.Vuetify1.ElectronNet.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AspNetCore.Vue.Vuetify1.Chromely.Controllers {
+namespace AspNetCore.Vue.Vuetify1.ElectronNet.Controllers {
 
     /// <summary> Sample Data Controller. </summary>
     [Route("api/[controller]")]

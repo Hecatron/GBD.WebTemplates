@@ -1,4 +1,4 @@
-namespace AspNetCore.Vue.Vuetify1.Chromely.Models {
+namespace AspNetCore.Vue.Vuetify1.ElectronNet.Models {
 
     /// <summary> Weather Forecast. </summary>
     public class WeatherForecast {

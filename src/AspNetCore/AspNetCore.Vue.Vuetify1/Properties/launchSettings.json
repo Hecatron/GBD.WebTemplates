@@ -19,7 +19,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "AspNetCore.Vue.Vuetify1": {
+    "Console": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

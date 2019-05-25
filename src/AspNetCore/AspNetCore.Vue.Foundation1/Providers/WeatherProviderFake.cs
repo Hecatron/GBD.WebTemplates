@@ -1,36 +1,39 @@
+using AspNetCore.Vue.Foundation1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using AspNetCore.Vue.Foundation1.Models;
 
-namespace AspNetCore.Vue.Foundation1.Providers
-{
-    public class WeatherProviderFake : IWeatherProvider
-    {
+namespace AspNetCore.Vue.Foundation1.Providers {
+
+    /// <summary> Weather Provider. </summary>
+    public class WeatherProviderFake : IWeatherProvider {
         private readonly string[] summaries = {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
+        /// <summary> Gets or sets the weather forecasts. </summary>
+        /// <value> The weather forecasts. </value>
         private List<WeatherForecast> WeatherForecasts { get; set; }
 
-        public WeatherProviderFake()
-        {
+        /// <summary> Default constructor. </summary>
+        public WeatherProviderFake() {
             Initialize(50);
         }
 
-        private void Initialize(int quantity)
-        {
+        /// <summary> Initializes this object. </summary>
+        /// <param name="quantity"> The quantity. </param>
+        private void Initialize(int quantity) {
             var rng = new Random();
-            WeatherForecasts = Enumerable.Range(1, quantity).Select(index => new WeatherForecast
-            {
+            WeatherForecasts = Enumerable.Range(1, quantity).Select(index => new WeatherForecast {
                 DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = summaries[rng.Next(summaries.Length)]
             }).ToList();
         }
 
-        public List<WeatherForecast> GetForecasts()
-        {
+        /// <summary> Gets the forecasts. </summary>
+        /// <returns> The forecasts. </returns>
+        public List<WeatherForecast> GetForecasts() {
             return WeatherForecasts;
         }
     }
