@@ -39,6 +39,9 @@ namespace AspNetCore.Vue.Vuetify1.Chromely {
                 // For production, this should not be needed when the app is published and an cefglue_winapi_netcoredemo.exe 
                 // is created.
 
+                // TODO Release check
+                // TODO add to wiki
+
                 // Alternate approach for multi-process, is to add a subprocess application
                 // .WithCustomSetting(CefSettingKeys.BrowserSubprocessPath, full_path_to_subprocess)
                 .WithCustomSetting(CefSettingKeys.SingleProcess, true);

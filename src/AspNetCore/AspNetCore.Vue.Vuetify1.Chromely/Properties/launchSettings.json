@@ -20,7 +20,7 @@
         "ASPNETCORE_CHROMELY": "false"
       }
     },
-    "AspNetCore.Vue.Vuetify1": {
+    "Web Local": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

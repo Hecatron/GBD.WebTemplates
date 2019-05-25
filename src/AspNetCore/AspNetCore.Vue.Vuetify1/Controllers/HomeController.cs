@@ -1,21 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
-namespace AspNetCore.Vue.Vuetify1.Controllers
-{
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
-        {
+namespace AspNetCore.Vue.Vuetify1.Controllers {
+
+    /// <summary> Home Controller. </summary>
+    public class HomeController : Controller {
+
+        /// <summary> Index Page. </summary>
+        /// <returns> The view. </returns>
+        public IActionResult Index() {
             return View();
         }
 
-        public IActionResult Error()
-        {
+        /// <summary> Error Page. </summary>
+        /// <returns> The view. </returns>
+        public IActionResult Error() {
             ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
             return View();
         }
