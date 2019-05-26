@@ -5,6 +5,9 @@
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <TypeScriptToolsVersion>3.4.1</TypeScriptToolsVersion>
     <IsPackable>false</IsPackable>
+    <ApplicationIcon />
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AspNetCore.Vue.Vuetify1.Chromely.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
