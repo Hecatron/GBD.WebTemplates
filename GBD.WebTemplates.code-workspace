@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": "."
+		},
+		{
+			"name": "Templates",
+			"path": "templates"
+		}
+	],
+	"settings": {}
+}
