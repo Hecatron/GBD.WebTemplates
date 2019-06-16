@@ -8,7 +8,7 @@ Vue.use(Vuetify);
 // @ts-ignore
 const vuetify = new Vuetify({
   icons: {
-    iconfont: 'mdi',
+    iconfont: 'fa',
   },
 });
 
