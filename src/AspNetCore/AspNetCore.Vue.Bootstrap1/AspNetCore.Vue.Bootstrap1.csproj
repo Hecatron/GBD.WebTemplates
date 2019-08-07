@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
-    <TypeScriptToolsVersion>3.4.1</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -32,7 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.6" />
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.6" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,9 +51,6 @@
     <TypeScriptCompile Include="ClientApp\common\svgicon.ts" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.4" />
-  </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
