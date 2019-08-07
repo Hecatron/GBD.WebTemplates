@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "App - CEF Browser",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/run.py",
+            "cwd": "${workspaceFolder}/src",
+            "console": "integratedTerminal",
+            "args": [
+                ""
+            ],
+        },
+
+        {
+            "name": "App - No Browser",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/run.py",
+            "cwd": "${workspaceFolder}/src",
+            "console": "integratedTerminal",
+            "args": [
+                "--disableui", "--port=5000"
+            ],
+        },
+        {
+            "name": "Chrome Debug",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5000/",
+            "webRoot": "${workspaceFolder}/src/wwwroot"
+        },
+
+    ],
+    "compounds": [
+        {
+            "name": "App - Chrome Debug",
+            "configurations": ["App - No Browser", "Chrome Debug"]
+        }
+    ]
+}

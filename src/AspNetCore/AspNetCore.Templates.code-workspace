@@ -8,7 +8,16 @@
 		},
 		{
 			"path": "AspNetCore.Vue.Vuetify1"
-		}
+		},
+		{
+			"path": "AspNetCore.Vue.Vuetify1.Chromely"
+		},
+		{
+			"path": "AspNetCore.Vue.Vuetify1.ElectronNet"
+		},
+		{
+			"path": "AspNetCore.Vue.Vuetify2"
+		},
 	],
 	"extensions": {
 		"recommendations": [

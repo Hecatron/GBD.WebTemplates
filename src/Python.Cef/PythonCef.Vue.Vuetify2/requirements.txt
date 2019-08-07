@@ -1,0 +1,12 @@
+# Python requirements file
+
+# Runtime requirements
+cefpython3>=66
+flask>=1.0.2
+gevent>=1.3.6
+
+# Installer requirements
+pyinstaller>=3.3.1
+
+# Unsure if we still need this
+wxpython>=4.0.3
