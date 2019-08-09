@@ -32,13 +32,6 @@ var entrypoints = {
     'popper.js',
     // Font Awesome
     './ClientApp/css/fontawesome.scss', // Font Files
-    // animate.css
-    'animate.css',
-    // vue-nprogress for a progress bar along the top
-    'vue-nprogress/dist/vue-nprogress.min.js',
-    // metismenujs
-    'metismenujs/dist/metismenujs.min.js',
-    'metismenujs/dist/metismenujs.min.css'
   ]
 };
 

@@ -1,35 +1,32 @@
 dependencies:
   '@fortawesome/fontawesome-free': 5.10.1
-  animate.css: 3.7.2
-  metismenujs: 1.1.0
-  vue: 2.6.10
-  vue-nprogress: 0.1.5_vue@2.6.10
-  vue-router: 3.1.1
-  vue-server-renderer: 2.6.10
-  vue-template-compiler: 2.6.10
-  vuetify: 1.5.16_vue@2.6.10
-  vuex: 3.1.1
-  vuex-router-sync: 5.0.0_vue-router@3.1.1+vuex@3.1.1
-devDependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.21
   '@fortawesome/free-brands-svg-icons': 5.10.1
   '@fortawesome/free-regular-svg-icons': 5.10.1
   '@fortawesome/free-solid-svg-icons': 5.10.1
   '@fortawesome/vue-fontawesome': 0.1.6_e34f5332a10c7836b2dd2a2895dc3190
-  '@types/webpack-env': 1.14.0
   ajv: 6.10.2
+  event-source-polyfill: 1.0.7
+  isomorphic-fetch: 2.2.1
+  metismenujs: 1.1.0
+  popper.js: 1.15.0
+  vue: 2.6.10
+  vue-router: 3.1.1
+  vue-server-renderer: 2.6.10
+  vuetify: 1.5.16_vue@2.6.10
+  vuex: 3.1.1
+  vuex-router-sync: 5.0.0_vue-router@3.1.1+vuex@3.1.1
+devDependencies:
+  '@types/webpack-env': 1.14.0
   aspnet-webpack: 3.0.0_7ca7bf3c9f1a9926731b9f691633132e
   cross-env: 5.2.0
   css-loader: 3.2.0_webpack@4.39.1
-  event-source-polyfill: 1.0.7
   extract-css-chunks-webpack-plugin: 4.6.0_webpack@4.39.1
   file-loader: 4.1.0_webpack@4.39.1
   fork-ts-checker-webpack-plugin: 1.5.0
-  isomorphic-fetch: 2.2.1
   node-sass: 4.12.0
   node-sass-package-importer: 5.3.2
   optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.39.1
-  popper.js: 1.15.0
   sass-loader: 7.1.0_webpack@4.39.1
   style-loader: 1.0.0_webpack@4.39.1
   stylus: 0.54.5
@@ -42,6 +39,7 @@ devDependencies:
   vue-loader: 15.7.1_css-loader@3.2.0+webpack@4.39.1
   vue-property-decorator: 8.2.1
   vue-style-loader: 4.1.2
+  vue-template-compiler: 2.6.10
   vuetify-loader: 1.3.0_abcff82ac161d62f7fd9339d684a5049
   webpack: 4.39.1_webpack@4.39.1
   webpack-cli: 3.3.6_webpack@4.39.1
@@ -78,7 +76,7 @@ packages:
     resolution:
       integrity: sha512-s63F9nJioLqOlW3UkyMd+BYhXt44YuaFm/VV0VwuteqjYwRrObkU7ra9pY4wAJR3oXi8hJrMcrcJdO/HH33vtw==
   /@fortawesome/fontawesome-common-types/0.2.21:
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -92,7 +90,7 @@ packages:
   /@fortawesome/fontawesome-svg-core/1.2.21:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.21
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -100,7 +98,7 @@ packages:
   /@fortawesome/free-brands-svg-icons/5.10.1:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.21
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -108,7 +106,7 @@ packages:
   /@fortawesome/free-regular-svg-icons/5.10.1:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.21
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -116,7 +114,7 @@ packages:
   /@fortawesome/free-solid-svg-icons/5.10.1:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.21
-    dev: true
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -125,7 +123,7 @@ packages:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.21
       vue: 2.6.10
-    dev: true
+    dev: false
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': '>= 1.2.0 < 1.3'
       vue: ~2
@@ -339,7 +337,6 @@ packages:
       fast-json-stable-stringify: 2.0.0
       json-schema-traverse: 0.4.1
       uri-js: 4.2.2
-    dev: true
     resolution:
       integrity: sha512-TXtUUEYHuaTEbLZWIKUr5pmBuhDLy+8KYtPYdcV8qC+pOZL+NKqYwvWSRrVXHn+ZmRRAu8vJTAznH7Oag6RVRw==
   /alphanum-sort/1.0.2:
@@ -352,10 +349,6 @@ packages:
       node: '>=0.4.2'
     resolution:
       integrity: sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-  /animate.css/3.7.2:
-    dev: false
-    resolution:
-      integrity: sha512-0bE8zYo7C0KvgOYrSVfrzkbYk6IOTVPNqkiHg2cbyF4Pq/PXzilz4BRWA3hwEUBoMp5VBgrC29lQIZyhRWdBTw==
   /ansi-colors/3.2.4:
     dev: true
     engines:
@@ -1437,6 +1430,7 @@ packages:
     resolution:
       integrity: sha1-6vQ5/U1ISK105cx9vvIAZyueNFs=
   /de-indent/1.0.2:
+    dev: true
     resolution:
       integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=
   /debug/2.6.9:
@@ -1631,7 +1625,7 @@ packages:
   /encoding/0.1.12:
     dependencies:
       iconv-lite: 0.4.24
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=
   /end-of-stream/1.4.1:
@@ -1740,7 +1734,7 @@ packages:
     resolution:
       integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
   /event-source-polyfill/1.0.7:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-TPbIjt4c3dlO7WTdsaTdwcxD1jKl+2gGD6dfauEmGqRNtpoB9ith/c4qa+X8XbTV5FsvTrkjepXfamWxntklVA==
   /events/3.0.0:
@@ -1856,11 +1850,9 @@ packages:
     resolution:
       integrity: sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
   /fast-deep-equal/2.0.1:
-    dev: true
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
   /fast-json-stable-stringify/2.0.0:
-    dev: true
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
   /figgy-pudding/3.5.1:
@@ -2404,7 +2396,7 @@ packages:
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
-    dev: true
+    dev: false
     engines:
       node: '>=0.10.0'
     resolution:
@@ -2736,7 +2728,6 @@ packages:
     resolution:
       integrity: sha512-qgDYXFSR5WvEfuS5dMj6oTMEbrrSaM0CrFk2Yiq/gXnBvD9pMa2jGXxyhGLfvhZpuMZe18CJpFxAt3CRs42NMg==
   /is-stream/1.1.0:
-    dev: true
     engines:
       node: '>=0.10.0'
     resolution:
@@ -2809,7 +2800,7 @@ packages:
     dependencies:
       node-fetch: 1.7.3
       whatwg-fetch: 3.0.0
-    dev: true
+    dev: false
     resolution:
       integrity: sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
   /isstream/0.1.2:
@@ -2845,7 +2836,6 @@ packages:
     resolution:
       integrity: sha512-mrqyZKfX5EhL7hvqcV6WG1yYjnjeuYDzDhhcAAUrq8Po85NBQBJP+ZDUT75qZQ98IkUoBqdkExkukOU7Ts2wrw==
   /json-schema-traverse/0.4.1:
-    dev: true
     resolution:
       integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
   /json-schema/0.2.3:
@@ -3364,7 +3354,7 @@ packages:
     dependencies:
       encoding: 0.1.12
       is-stream: 1.1.0
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-NhZ4CsKx7cYm2vSrBAr2PvFOe6sWDf0UYLRqA6svUYg7+/TSfVAu49jYC4BvQ4Sms9SZgdqGBgroqfDhJdTyKQ==
   /node-gyp/3.8.0:
@@ -3535,10 +3525,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2uUqazuKlTaSI/dC8AzicUck7+IrEaOnN/e0jd3Xtt1KcGpwx30v50mL7oPyr/h9bL3E4aZccVwpwP+5W9Vjkg==
-  /nprogress/0.2.0:
-    dev: false
-    resolution:
-      integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=
   /nth-check/1.0.2:
     dependencies:
       boolbase: 1.0.0
@@ -3911,7 +3897,7 @@ packages:
     resolution:
       integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   /popper.js/1.15.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
   /posix-character-classes/0.1.1:
@@ -4375,7 +4361,6 @@ packages:
     resolution:
       integrity: sha1-wNWmOycYgArY4esPpSachN1BhF4=
   /punycode/2.1.1:
-    dev: true
     engines:
       node: '>=6'
     resolution:
@@ -4661,7 +4646,6 @@ packages:
     resolution:
       integrity: sha1-QKNmnzsHfR6UPURinhV91IAjvy4=
   /safer-buffer/2.1.2:
-    dev: true
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
   /sass-graph/2.2.4:
@@ -5522,7 +5506,6 @@ packages:
   /uri-js/4.2.2:
     dependencies:
       punycode: 2.1.1
-    dev: true
     resolution:
       integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   /urix/0.1.0:
@@ -5641,15 +5624,6 @@ packages:
       webpack: ^4.1.0 || ^5.0.0-0
     resolution:
       integrity: sha512-fwIKtA23Pl/rqfYP5TSGK7gkEuLhoTvRYW+TU7ER3q9GpNLt/PjG5NLv3XHRDiTg7OPM1JcckBgds+VnAc+HbA==
-  /vue-nprogress/0.1.5_vue@2.6.10:
-    dependencies:
-      nprogress: 0.2.0
-      vue: 2.6.10
-    dev: false
-    peerDependencies:
-      vue: '>=2'
-    resolution:
-      integrity: sha1-V0tBLxA0AS2q9GKZ1VBdWBL0BuY=
   /vue-property-decorator/8.2.1:
     dependencies:
       vue: 2.6.10
@@ -5685,6 +5659,7 @@ packages:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
+    dev: true
     resolution:
       integrity: sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==
   /vue-template-es2015-compiler/1.9.1:
@@ -5844,7 +5819,7 @@ packages:
     resolution:
       integrity: sha512-/LAb2TJ2z+eVwisldp3dqTEoNhzp/TLCZlmZm3GGGAlnfIWDgOEE758j/9atklNLfRyhKbZTCOIoPqLJXeBLbQ==
   /whatwg-fetch/3.0.0:
-    dev: true
+    dev: false
     resolution:
       integrity: sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
   /when/3.6.4:
@@ -5985,7 +5960,6 @@ specifiers:
   '@fortawesome/vue-fontawesome': 0.1.6
   '@types/webpack-env': ^1.14.0
   ajv: ^6.10.2
-  animate.css: 3.7.2
   aspnet-webpack: ^3.0.0
   cross-env: ^5.2.0
   css-loader: ^3.2.0
@@ -6010,7 +5984,6 @@ specifiers:
   url-loader: ^2.1.0
   vue: ^2.6.1
   vue-loader: ^15.7.1
-  vue-nprogress: 0.1.5
   vue-property-decorator: ^8.2.1
   vue-router: ^3.1.1
   vue-server-renderer: ^2.6.1

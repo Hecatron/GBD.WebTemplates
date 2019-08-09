@@ -33,11 +33,6 @@ var entrypoints = {
     'bootstrap/dist/css/bootstrap.css',
     // Font Awesome
     './ClientApp/css/fontawesome.scss', // Font Files
-    // animate.css
-    'animate.css',
-    // NProgress for a progress bar along the top
-    'nprogress/nprogress.js',
-    'nprogress/nprogress.css',
     // metisMenu
     'metismenu/dist/metisMenu.js',
     'metismenu/dist/metisMenu.css'
