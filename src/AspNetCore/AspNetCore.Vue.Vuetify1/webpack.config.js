@@ -73,17 +73,14 @@ function rules() {
       // Development - inline css
       ['style-loader',
         { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], sourceMap: true } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass'), sourceMap: true } }
       ] :
       // Production - site.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1 } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"] } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass') } }
       ]
     },
-
-    // Stylus (styl) files
-    { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
 
     // images
     { test: /\.(png|jpg|jpeg|gif|svg)$/, use:

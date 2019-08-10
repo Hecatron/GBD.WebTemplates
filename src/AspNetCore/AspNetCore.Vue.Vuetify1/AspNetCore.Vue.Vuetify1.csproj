@@ -25,6 +25,7 @@
     <None Remove="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <None Remove="ClientApp\components\icon.ts" />
     <None Remove="ClientApp\components\pages\counter\counter.ts" />
+    <None Remove="ClientApp\plugins\vuetify.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -45,6 +46,7 @@
     <TypeScriptCompile Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <TypeScriptCompile Include="ClientApp\components\pages\counter\counter.ts" />
     <TypeScriptCompile Include="ClientApp\common\svgicon.ts" />
+    <TypeScriptCompile Include="ClientApp\plugins\vuetify.ts" />
   </ItemGroup>
 
   <ItemGroup>

@@ -13,7 +13,7 @@ dependencies:
   vue: 2.6.10
   vue-router: 3.1.2
   vue-server-renderer: 2.6.10
-  vuetify: 1.5.16_vue@2.6.10
+  vuetify: 2.0.5_vue@2.6.10
   vuex: 3.1.1
   vuex-router-sync: 5.0.0_vue-router@3.1.2+vuex@3.1.1
 devDependencies:
@@ -27,6 +27,7 @@ devDependencies:
   node-sass: 4.12.0
   node-sass-package-importer: 5.3.2
   optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.39.1
+  sass: 1.22.9
   sass-loader: 7.2.0_webpack@4.39.1
   style-loader: 1.0.0_webpack@4.39.1
   stylus: 0.54.5
@@ -40,7 +41,7 @@ devDependencies:
   vue-property-decorator: 8.2.1
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.10
-  vuetify-loader: 1.3.0_abcff82ac161d62f7fd9339d684a5049
+  vuetify-loader: 1.3.0_4abf3c8420ca8e60076a32f6081a36ec
   webpack: 4.39.1_webpack@4.39.1
   webpack-cli: 3.3.6_webpack@4.39.1
   webpack-dev-middleware: 3.7.0_webpack@4.39.1
@@ -399,6 +400,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-5teOsQWABXHHBFP9y3skS5P3d/WfWXpv3FUpy+LorMrNYaT9pI4oLMQX7jzQ2KklNpGpWHzdCXTDT2Y3XGlZBw==
+  /anymatch/3.0.3:
+    dependencies:
+      normalize-path: 3.0.0
+      picomatch: 2.0.7
+    dev: true
+    resolution:
+      integrity: sha512-c6IvoeBECQlMVuYUjSwimnhmztImpErfxJzWZhIQinIvQWoGOnB0dLIgifbPHQt5heS6mNlaZG16f06H3C8t1g==
   /aproba/1.2.0:
     dev: true
     resolution:
@@ -608,6 +616,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==
+  /binary-extensions/2.0.0:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-Phlt0plgpIIBOGTT/ehfFnbNlfsDEiqmzE2KRXoX1bLIlir4X/MR+zSyBEkL05ffWgnRSf/DXv+WrUAVr93/ow==
   /block-stream/0.0.9:
     dependencies:
       inherits: 2.0.3
@@ -923,6 +937,22 @@ packages:
       fsevents: 1.2.9
     resolution:
       integrity: sha512-V2jUo67OKkc6ySiRpJrjlpJKl9kDuG+Xb8VgsGzb+aEouhgS1D0weyPU4lEzdAcsCAvrih2J2BqyXqHWvVLw5g==
+  /chokidar/3.0.2:
+    dependencies:
+      anymatch: 3.0.3
+      braces: 3.0.2
+      glob-parent: 5.0.0
+      is-binary-path: 2.1.0
+      is-glob: 4.0.1
+      normalize-path: 3.0.0
+      readdirp: 3.1.1
+    dev: true
+    engines:
+      node: '>= 8'
+    optionalDependencies:
+      fsevents: 2.0.7
+    resolution:
+      integrity: sha512-c4PR2egjNjI1um6bamCQ6bUNPDiyofNQruHvKgHQ4gDUP/ITSVSzNsiI5OWtHOsX323i5ha/kk4YmOZ1Ktg7KA==
   /chownr/1.1.2:
     dev: true
     resolution:
@@ -2034,6 +2064,13 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-oeyj2H3EjjonWcFjD5NvZNE9Rqe4UW+nQBU2HNeKw0koVLEFIhtyETyAakeAM3de7Z/SW5kcA+fZUait9EApnw==
+  /fsevents/2.0.7:
+    dev: true
+    engines:
+      node: ^8.16.0 || ^10.6.0 || >=11.0.0
+    optional: true
+    resolution:
+      integrity: sha512-a7YT0SV3RB+DjYcppwVDLtn13UQnmg0SWZS7ezZD0UjnLwXmy8Zm21GMVGLaFGimIqcvyMQaOJBrop8MyOp1kQ==
   /fstream/1.0.11:
     dependencies:
       graceful-fs: 4.1.15
@@ -2113,6 +2150,14 @@ packages:
     dev: true
     resolution:
       integrity: sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4=
+  /glob-parent/5.0.0:
+    dependencies:
+      is-glob: 4.0.1
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-Z2RwiujPRGluePM6j699ktJYxmPpJKCfpGA13jz2hmFZC7gKetzrWvg5KN3+OsIFmydGyZ1AVwERCq1w/ZZwRg==
   /glob/7.0.6:
     dependencies:
       fs.realpath: 1.0.0
@@ -2533,6 +2578,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-dfFmQrSA8YenEcgUFh/TpKdlWJg=
+  /is-binary-path/2.1.0:
+    dependencies:
+      binary-extensions: 2.0.0
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
   /is-buffer/1.1.6:
     dev: true
     resolution:
@@ -4421,6 +4474,14 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==
+  /readdirp/3.1.1:
+    dependencies:
+      picomatch: 2.0.7
+    dev: true
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-XXdSXZrQuvqoETj50+JAitxz1UPdt5dupjT6T5nVB+WvjMv2XKYj+s7hPeAVCXvmJrL36O4YYyWlIC3an2ePiQ==
   /redent/1.0.0:
     dependencies:
       indent-string: 2.1.0
@@ -4635,6 +4696,15 @@ packages:
       webpack: ^3.0.0 || ^4.0.0
     resolution:
       integrity: sha512-h8yUWaWtsbuIiOCgR9fd9c2lRXZ2uG+h8Dzg/AGNj+Hg/3TO8+BBAW9mEP+mh8ei+qBKqSJ0F1FLlYjNBc61OA==
+  /sass/1.22.9:
+    dependencies:
+      chokidar: 3.0.2
+    dev: true
+    engines:
+      node: '>=8.9.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-FzU1X2V8DlnqabrL4u7OBwD2vcOzNMongEJEx3xMEhWY/v26FFR3aG0hyeu2T965sfR0E9ufJwmG+Qjz78vFPQ==
   /sax/0.5.8:
     dev: true
     resolution:
@@ -5623,11 +5693,11 @@ packages:
   /vue/2.6.10:
     resolution:
       integrity: sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
-  /vuetify-loader/1.3.0_abcff82ac161d62f7fd9339d684a5049:
+  /vuetify-loader/1.3.0_4abf3c8420ca8e60076a32f6081a36ec:
     dependencies:
       loader-utils: 1.2.3
       vue-template-compiler: 2.6.10
-      vuetify: 1.5.16_vue@2.6.10
+      vuetify: 2.0.5_vue@2.6.10
       webpack: 4.39.1_webpack@4.39.1
     dev: true
     peerDependencies:
@@ -5636,13 +5706,13 @@ packages:
       webpack: ^4.0.0
     resolution:
       integrity: sha512-emKS3GWpx+0kWRHfoxpDpLR4HaXvhDn9bYNQf+IaaD5iU5S3xktDyS0egG7dp/oHLQr1U/Ui9g2ElhZUkdgRqw==
-  /vuetify/1.5.16_vue@2.6.10:
+  /vuetify/2.0.5_vue@2.6.10:
     dependencies:
       vue: 2.6.10
     peerDependencies:
-      vue: ^2.5.18
+      vue: ^2.6.4
     resolution:
-      integrity: sha512-yBgOsfurKQkeS+l+rrTQZ2bFk0D9ezjHhkuVM5A/yVzcg62sY2nfYaq/H++uezBWC9WYFrp/5OmSocJQcWn9Qw==
+      integrity: sha512-t2JNarqqJRzOEtNg2nP9U5EFU4jR6unA8RIiqBGb3pjSCaTxwHzu5H3wkcBh/NM3y6fd40EuIS+SkFejwGD6RQ==
   /vuex-router-sync/5.0.0_vue-router@3.1.2+vuex@3.1.1:
     dependencies:
       vue-router: 3.1.2
@@ -5927,6 +5997,7 @@ specifiers:
   node-sass-package-importer: ^5.3.2
   optimize-css-assets-webpack-plugin: 5.0.3
   popper.js: 1.15.0
+  sass: ^1.22.9
   sass-loader: ^7.2.0
   style-loader: ^1.0.0
   stylus: 0.54.5
@@ -5943,7 +6014,7 @@ specifiers:
   vue-server-renderer: ^2.6.1
   vue-style-loader: 4.1.2
   vue-template-compiler: ^2.6.1
-  vuetify: 1.5.16
+  vuetify: 2.0.5
   vuetify-loader: 1.3.0
   vuex: ^3.1.1
   vuex-router-sync: ^5.0.0

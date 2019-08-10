@@ -8,7 +8,7 @@ const bundleOutputDir = './wwwroot/dist';
 var isDevBuild = true;
 
 // Plugins
-const ExtractCssChunks = require("extract-css-chunks-webpack-plugin")
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
@@ -29,7 +29,7 @@ function plugins() {
     new webpack.DefinePlugin({ 'process.env.NODE_ENV': isDevBuild ? '"development"' : '"production"' }),
     new webpack.DllReferencePlugin({ context: __dirname, manifest: require('./wwwroot/dist/vendor-manifest.json') }),
     new VueLoaderPlugin(),
-    new ForkTsCheckerWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin()
   ].concat(isDevBuild ? [
     // Plugins that apply in development builds only
     new webpack.SourceMapDevToolPlugin({
@@ -42,7 +42,7 @@ function plugins() {
       // Condense the CSS to as small as possible, and remove comments
       new OptimizeCssAssetsPlugin({
         cssProcessorPluginOptions: {
-          preset: ['default', { discardComments: { removeAll: true } }],
+          preset: ['default', { discardComments: { removeAll: true } }]
         }
       })
   ]);
@@ -71,12 +71,12 @@ function rules() {
       // Development - inline css
       ['style-loader',
         { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], sourceMap: true } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass'), sourceMap: true } }
       ] :
       // Production - site.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1 } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"] } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass') } }
       ]
     },
 
@@ -95,8 +95,8 @@ function rules() {
 
 // Main webpack options
 module.exports = (env, argv) => {
-  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production')
-  console.log('Development build: ' + isDevBuild);
+  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production');
+  console.log(`Development build: ${isDevBuild}`);
 
   return [{
     // If to run webpack in development or production

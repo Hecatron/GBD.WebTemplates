@@ -8,7 +8,7 @@ const bundleOutputDir = './wwwroot/dist';
 var isDevBuild = true;
 
 // Plugins
-const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -26,8 +26,8 @@ var entrypoints = {
     'vue',
     'vue-router',
 
-	// TODO
-	
+  // TODO
+  
     // Other Depends
     'popper.js',
     // Font Awesome
@@ -73,12 +73,12 @@ function rules() {
       // Development - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], implementation: require("sass"), sourceMap: true } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass'), sourceMap: true } }
       ] :
       // Production - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1 } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], implementation: require("sass") } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], implementation: require('sass') } }
       ]
     },
 

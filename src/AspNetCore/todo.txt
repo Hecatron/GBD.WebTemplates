@@ -1,0 +1,11 @@
+vuetify2
+
+  * rename vuetify1 to vuetify2
+  * update ClientApp code
+  * do a final check between frontends
+
+general
+
+  * move webpack code to seperate rule files
+  * check csproj files differences
+
