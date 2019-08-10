@@ -23,7 +23,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.1/AspNetCore.Vue.Bootstrap1.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/AspNetCore.Vue.Bootstrap1.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

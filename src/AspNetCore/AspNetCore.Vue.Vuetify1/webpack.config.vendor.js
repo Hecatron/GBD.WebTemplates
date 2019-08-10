@@ -8,7 +8,7 @@ const bundleOutputDir = './wwwroot/dist';
 var isDevBuild = true;
 
 // Plugins
-const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -19,19 +19,17 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // then webpack will look at the named directory inside node_modules -> package.json -> The main field
 var entrypoints = {
   vendor: [
+    // Frontend
+    'popper.js',
+    './ClientApp/css/fontawesome.scss',
+
     // Additional depends
     'event-source-polyfill',
     'isomorphic-fetch',
+
     // Vuejs related
     'vue',
-    'vue-router',
-
-	// TODO
-	
-    // Other Depends
-    'popper.js',
-    // Font Awesome
-    './ClientApp/css/fontawesome.scss', // Font Files
+    'vue-router'
   ]
 };
 
@@ -66,12 +64,12 @@ function rules() {
       // Development - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], sourceMap: true } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], sourceMap: true } }
       ] :
       // Production - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1 } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"] } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'] } }
       ]
     },
 
@@ -91,7 +89,7 @@ function rules() {
 // Main webpack options
 module.exports = (env, argv) => {
   isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production');
-  console.log('Development build: ' + isDevBuild);
+  console.log(`Development build: ${isDevBuild}`);
 
   return [{
     // If to run webpack in development or production

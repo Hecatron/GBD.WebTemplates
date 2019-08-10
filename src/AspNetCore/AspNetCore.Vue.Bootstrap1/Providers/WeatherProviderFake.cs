@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace AspNetCore.Vue.Bootstrap1.Providers {
+
     /// <summary> Weather Provider. </summary>
     public class WeatherProviderFake : IWeatherProvider {
         private readonly string[] summaries = {

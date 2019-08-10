@@ -8,7 +8,7 @@ const bundleOutputDir = './wwwroot/dist';
 var isDevBuild = true;
 
 // Plugins
-const ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+const ExtractCssChunks = require('extract-css-chunks-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -19,23 +19,22 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // then webpack will look at the named directory inside node_modules -> package.json -> The main field
 var entrypoints = {
   vendor: [
+    // Frontend
+    'bootstrap/dist/js/bootstrap.js',
+    'bootstrap/dist/css/bootstrap.css',
+    'jquery',
+    'popper.js',
+    'metismenu/dist/metisMenu.js',
+    'metismenu/dist/metisMenu.css',
+    './ClientApp/css/fontawesome.scss',
+
     // Additional depends
     'event-source-polyfill',
     'isomorphic-fetch',
+
     // Vuejs related
     'vue',
-    'vue-router',
-    // Bootstrap4 Depends
-    'jquery',
-    'popper.js',
-    // Bootstrap4
-    'bootstrap/dist/js/bootstrap.js',
-    'bootstrap/dist/css/bootstrap.css',
-    // Font Awesome
-    './ClientApp/css/fontawesome.scss', // Font Files
-    // metisMenu
-    'metismenu/dist/metisMenu.js',
-    'metismenu/dist/metisMenu.css'
+    'vue-router'
   ]
 };
 
@@ -48,13 +47,13 @@ function plugins() {
     new webpack.DllPlugin({ path: path.join(__dirname, bundleOutputDir, '[name]-manifest.json'), name: '[name]_[hash]' }),
     // Maps these identifiers to the jQuery package (expected to be a global variable)
     new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }),
-    new ExtractCssChunks({ filename: 'styles/vendor.css' }),
+    new ExtractCssChunks({ filename: 'styles/vendor.css' })
   ].concat(isDevBuild ? [] : [
     // Plugins that apply in production builds only
     // Condense the CSS to as small as possible, and remove comments
     new OptimizeCssAssetsPlugin({
       cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
+        preset: ['default', { discardComments: { removeAll: true } }]
       }
     })
   ]);
@@ -72,12 +71,12 @@ function rules() {
       // Development - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1, sourceMap: true } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"], sourceMap: true } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'], sourceMap: true } }
       ] :
       // Production - vendor.css
       [ExtractCssChunks.loader,
         { loader: 'css-loader', options: { importLoaders: 1 } },
-        { loader: 'sass-loader', options: { includePaths: ["ClientApp/css", "node_modules"] } }
+        { loader: 'sass-loader', options: { includePaths: ['ClientApp/css', 'node_modules'] } }
       ]
     },
 
@@ -96,8 +95,8 @@ function rules() {
 
 // Main webpack options
 module.exports = (env, argv) => {
-  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production')
-  console.log('Development build: ' + isDevBuild);
+  isDevBuild = !((argv && argv.mode === 'production') || process.env.NODE_ENV === 'production');
+  console.log(`Development build: ${isDevBuild}`);
 
   return [{
     // If to run webpack in development or production
