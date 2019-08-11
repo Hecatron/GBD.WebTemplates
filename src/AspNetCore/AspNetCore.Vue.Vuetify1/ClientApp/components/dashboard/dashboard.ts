@@ -1,7 +1,9 @@
-import { Component, Vue, Prop, Emit } from "vue-property-decorator";
-import SideBar from "./sidebar/sidebar.vue";
-import TopNavBar from "./topnavbar/topnavbar.vue";
-import SideBarComponent from "./sidebar/sidebar"
+import { Component, Vue, Prop, Emit } from 'vue-property-decorator';
+import SideBar from './sidebar/sidebar.vue';
+import TopNavBar from './topnavbar/topnavbar.vue';
+import SideBarComponent from './sidebar/sidebar'
+import { VuetifyObject } from 'vuetify';
+
 
 // TODO
 // metismenu / scss
@@ -14,12 +16,14 @@ import SideBarComponent from "./sidebar/sidebar"
   },
 })
 export default class DashBoardComponent extends Vue {
-  // Needed for vue refs to work under typescript
-  $refs!: {
-    sidebar1: SideBarComponent;
+
+  public toggle_sidebar() {
+    const sidebar1 = this['$refs'].sidebar1 as SideBarComponent;
+    sidebar1.toggle_sidebar();
   }
 
-  toggle_sidebar() {
-    this.$refs.sidebar1.toggle_sidebar()
+  public created() {
+    const vuetifyprops = this['$vuetify'] as VuetifyObject;
+    vuetifyprops.theme.dark = true;
   }
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="app-dashboard">
-        <v-app id="inspire" dark>
+        <v-app id="inspire">
 
             <sidebar-component ref="sidebar1" app />
 

@@ -8,59 +8,59 @@
                 <v-list-group prepend-icon="fa-cog" value="true">
 
                     <template v-slot:activator>
-                        <v-list-tile>
-                            <v-list-tile-title>Basic Examples</v-list-tile-title>
-                        </v-list-tile>
+                        <v-list-item>
+                            <v-list-item-title>Basic Examples</v-list-item-title>
+                        </v-list-item>
                     </template>
 
-                    <v-list-tile to="/counter">
-                        <v-list-tile-title>Counter Example</v-list-tile-title>
-                    </v-list-tile>
+                    <v-list-item to="/counter">
+                        <v-list-item-title>Counter Example</v-list-item-title>
+                    </v-list-item>
 
-                    <v-list-tile to="/fetchdata">
-                        <v-list-tile-title>Fetch Data Example</v-list-tile-title>
-                        <v-list-tile-action>
+                    <v-list-item to="/fetchdata">
+                        <v-list-item-title>Fetch Data Example</v-list-item-title>
+                        <v-list-item-action>
                             <v-icon>fa-cog</v-icon>
-                        </v-list-tile-action>
-                    </v-list-tile>
+                        </v-list-item-action>
+                    </v-list-item>
 
-                    <v-list-tile to="/test1">
-                        <v-list-tile-title>Test1</v-list-tile-title>
-                    </v-list-tile>
+                    <v-list-item to="/test1">
+                        <v-list-item-title>Test1</v-list-item-title>
+                    </v-list-item>
 
-                    <v-list-tile to="/test2">
-                        <v-list-tile-title>Test2</v-list-tile-title>
-                    </v-list-tile>
+                    <v-list-item to="/test2">
+                        <v-list-item-title>Test2</v-list-item-title>
+                    </v-list-item>
 
                 </v-list-group>
 
                 <v-list-group>
 
                     <template v-slot:activator>
-                        <v-list-tile>
-                            <v-list-tile-title>Sub Menu Example</v-list-tile-title>
-                        </v-list-tile>
+                        <v-list-item>
+                            <v-list-item-title>Sub Menu Example</v-list-item-title>
+                        </v-list-item>
                     </template>
 
                     <v-list-group sub-group no-action>
 
                         <template v-slot:activator>
-                            <v-list-tile>
-                                <v-list-tile-title>Sub Menu1 1</v-list-tile-title>
-                            </v-list-tile>
+                            <v-list-item>
+                                <v-list-item-title>Sub Menu1 1</v-list-item-title>
+                            </v-list-item>
                         </template>
 
-                        <v-list-tile>
-                            <v-list-tile-title>Thing1</v-list-tile-title>
-                        </v-list-tile>
+                        <v-list-item>
+                            <v-list-item-title>Thing1</v-list-item-title>
+                        </v-list-item>
 
-                        <v-list-tile>
-                            <v-list-tile-title>Thing2</v-list-tile-title>
-                        </v-list-tile>
+                        <v-list-item>
+                            <v-list-item-title>Thing2</v-list-item-title>
+                        </v-list-item>
 
-                        <v-list-tile>
-                            <v-list-tile-title>Thing3</v-list-tile-title>
-                        </v-list-tile>
+                        <v-list-item>
+                            <v-list-item-title>Thing3</v-list-item-title>
+                        </v-list-item>
 
                     </v-list-group>
 
