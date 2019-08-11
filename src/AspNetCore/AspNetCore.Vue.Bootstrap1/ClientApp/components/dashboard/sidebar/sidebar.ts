@@ -1,10 +1,10 @@
-import { Component, Vue } from "vue-property-decorator";
-import NavBar from "../sidebarmenu/sidebarmenu.vue";
-import { TopNavBarEvents } from "common/eventbus";
+import { Component, Vue } from 'vue-property-decorator';
+import NavBar from '../sidebarmenu/sidebarmenu.vue';
+import { TopNavBarEvents } from 'common/eventbus';
 
 @Component({
   components: {
-    "navbar-component": NavBar,
+    'navbar-component': NavBar,
   },
 })
 export default class SideBarComponent extends Vue {
@@ -15,11 +15,11 @@ export default class SideBarComponent extends Vue {
   private mounted() {
 
     // Handle click event from top navbar
-    TopNavBarEvents.$on("toggle-sidebar-desktop", () => {
+    TopNavBarEvents.$on('toggle-sidebar-desktop', () => {
       this.toggsidebar_desktop = !this.toggsidebar_desktop;
     });
     // Handle click event from top navbar
-    TopNavBarEvents.$on("toggle-sidebar-mobile", () => {
+    TopNavBarEvents.$on('toggle-sidebar-mobile', () => {
       this.toggsidebar_mobile = !this.toggsidebar_mobile;
     });
 

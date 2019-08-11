@@ -4,7 +4,7 @@
   https://alligator.io/vuejs/global-event-bus/
 */
 
-import Vue from "vue";
+import Vue from 'vue';
 
 /* Used for events from the top navbar */
 export const TopNavBarEvents = new Vue();
