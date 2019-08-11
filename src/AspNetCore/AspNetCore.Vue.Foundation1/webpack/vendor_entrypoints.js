@@ -9,12 +9,8 @@ var entrypoints = {
   vendor: [
 
     // Frontend
-    'bootstrap/dist/js/bootstrap.js',
-    'bootstrap/dist/css/bootstrap.css',
+    'foundation-sites',
     'jquery',
-    'popper.js',
-    'metismenu/dist/metisMenu.js',
-    'metismenu/dist/metisMenu.css',
     './ClientApp/css/fontawesome.scss',
 
     // Additional depends

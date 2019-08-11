@@ -8,4 +8,4 @@ general
 
   * move webpack code to seperate rule files
   * check csproj files differences
-
+  * test webpack build - production instead of dev
