@@ -23,6 +23,7 @@
     "obj",
     "node_modules",
     "wwwroot/dist",
+    "webpack",
     "webpack.config.*"
   ]
 }
