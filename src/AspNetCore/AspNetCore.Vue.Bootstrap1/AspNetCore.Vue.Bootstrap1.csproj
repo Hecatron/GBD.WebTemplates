@@ -29,7 +29,6 @@
     <None Remove="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <None Remove="ClientApp\components\icon.ts" />
     <None Remove="ClientApp\components\pages\counter\counter.ts" />
-    <None Remove="webpack\vendor_entrypoints.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,9 +49,7 @@
     <TypeScriptCompile Include="ClientApp\components\dashboard\topnavbar\topnavbar.ts" />
     <TypeScriptCompile Include="ClientApp\components\pages\counter\counter.ts" />
     <TypeScriptCompile Include="ClientApp\common\svgicon.ts" />
-    <TypeScriptCompile Include="webpack\vendor_entrypoints.js" />
   </ItemGroup>
-
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
     <!-- Ensure Node.js is installed -->
