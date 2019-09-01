@@ -38,6 +38,6 @@ function opts(isDevBuild, bundleOutputDir) {
       minimizer: [new TerserPlugin({ sourceMap: true })]
     }
   }];
-}
+};
 
 exports.opts = opts;

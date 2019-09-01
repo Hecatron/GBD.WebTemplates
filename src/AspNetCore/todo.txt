@@ -13,7 +13,6 @@
   * Do a compare for ClientApp between different front ends
   * test webpack build - production instead of dev
   * final diffs between different frontends
-
-
+  * update sass-loader / fix the webpack for it (needs a seperate option setting)
 
 
