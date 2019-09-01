@@ -1,7 +1,19 @@
-general
+# Todo
 
-  * move vuetify2 changes to vuetify1
-  * check over diffs in ClientApp code
-  * final diffs between different frontends
-  * check csproj files differences
+## Vuetify2
+
+  * Seperate out the webpack files
+  * Split the package depends for package.json
+  * Compare against vuetify1
+  * Fix formatting differences (dark theme)
+  * Compare the csproj for Vuetify2 against bootstrap
+
+## General
+
+  * Do a compare for ClientApp between different front ends
   * test webpack build - production instead of dev
+  * final diffs between different frontends
+
+
+
+
