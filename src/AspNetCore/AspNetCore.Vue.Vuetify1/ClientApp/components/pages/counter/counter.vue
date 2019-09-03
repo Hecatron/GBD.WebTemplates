@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid fill-height>
-        <v-layout>
-            <v-flex shrink>
+    <v-container fluid>
+        <v-row>
+            <v-col>
 
                 <h1>Counter</h1>
 
@@ -11,8 +11,8 @@
 
                 <v-btn @click="incrementCounter">Increment</v-btn>
 
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 

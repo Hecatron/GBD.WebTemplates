@@ -1,8 +1,8 @@
 
 <template>
-    <v-container fluid fill-height>
-        <v-layout justify-center align-center>
-            <v-flex shrink>
+    <v-container fluid>
+        <v-row justify-center align-center>
+            <v-col shrink>
 
                 <v-tooltip right>
                     <template v-slot:activator="{ on }">
@@ -22,8 +22,8 @@
                     <span>Codepen</span>
                 </v-tooltip>
 
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 <script src="./test2.ts"></script>

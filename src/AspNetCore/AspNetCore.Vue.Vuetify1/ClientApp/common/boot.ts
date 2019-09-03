@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router';
 import vuetify from '../plugins/vuetify';
+import 'vuetify/dist/vuetify.css'
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);

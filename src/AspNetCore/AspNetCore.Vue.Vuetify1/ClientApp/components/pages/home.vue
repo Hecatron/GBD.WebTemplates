@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid fill-height>
-        <v-layout>
-            <v-flex shrink>
+    <v-container fluid>
+        <v-row>
+            <v-col shrink>
 
                 <div>
                     <h1>Hello, world!</h1>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
 
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>

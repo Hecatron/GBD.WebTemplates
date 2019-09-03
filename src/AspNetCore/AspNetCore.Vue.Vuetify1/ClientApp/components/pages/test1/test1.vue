@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid fill-height>
-        <v-layout>
-            <v-flex shrink>
+    <v-container fluid>
+        <v-row>
+            <v-col shrink>
 
                 <div>
                     <h2 class="text-center">Lorem Ipsum</h2>
@@ -16,7 +16,7 @@
                     <p>Nullam hendrerit tincidunt risus. Sed nec nibh vel nibh euismod lobortis sed a sem. Nulla nec libero dolor. Pellentesque non sodales orci. Phasellus odio ligula, varius non orci ac, fermentum pulvinar nibh. Aliquam erat volutpat. Curabitur vehicula varius porttitor. Integer purus sapien, placerat sodales eros et, interdum vestibulum sem. Duis faucibus felis vitae augue ultricies, aliquet tempor orci vestibulum. Duis eu justo mi. Praesent feugiat, ante interdum fringilla auctor, ex nibh aliquet neque, sed feugiat tellus tortor non dui. Suspendisse potenti. Aliquam fringilla sapien felis, at faucibus justo interdum congue.</p>
                 </div>
 
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>

@@ -1,7 +1,7 @@
 <template>
-    <v-container fluid fill-height>
-        <v-layout>
-            <v-flex shrink>
+    <v-container fluid>
+        <v-row>
+            <v-col>
 
                 <div>
                     <h1>Weather forecast</h1>
@@ -30,8 +30,8 @@
                     <p v-else><em>Loading...</em></p>
                 </div>
 
-            </v-flex>
-        </v-layout>
+            </v-col>
+        </v-row>
     </v-container>
 </template>
 
