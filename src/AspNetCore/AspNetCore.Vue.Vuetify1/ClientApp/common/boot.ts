@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router';
-import vuetify from '../plugins/vuetify';
+import vuetify from './vuetify';
 import 'vuetify/dist/vuetify.css'
 
 Vue.config.productionTip = false;
@@ -15,30 +15,3 @@ new Vue({
   render: (h: any) => h(require('../components/dashboard/dashboard.vue').default),
   router: new VueRouter({ mode: 'history', routes })
 }).$mount('#app-root');
-
-
-
-
-//import { Component, Vue } from "vue-property-decorator";
-//import VueRouter from "vue-router";
-//import Vuetify from "vuetify";
-//import "vuetify/dist/vuetify.css"
-//import "vuetify/dist/vuetify.min.js"
-//Vue.use(VueRouter);
-//Vue.use(Vuetify, { iconfont: "fa" });
-
-
-//// Destination routes for different urls
-//import { routes } from './routes';
-
-
-//// Root component
-//@Component({
-//    render: (h: any) => h(require("../components/dashboard/dashboard.vue").default),
-//    router: new VueRouter({ mode: "history", routes }),
-//})
-//export default class BootComponent extends Vue {
-//}
-
-//// see https://vuejs.org/v2/api/#vm-mount for root component
-//new BootComponent().$mount("#app-root");

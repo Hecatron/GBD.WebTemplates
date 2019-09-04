@@ -4,11 +4,6 @@ import TopNavBar from './topnavbar/topnavbar.vue';
 import SideBarComponent from './sidebar/sidebar'
 import { VuetifyObject } from 'vuetify';
 
-
-// TODO
-// metismenu / scss
-// size when menu switches over
-
 @Component({
   components: {
     "sidebar-component": SideBar,

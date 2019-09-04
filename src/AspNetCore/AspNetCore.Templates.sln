@@ -15,8 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Vuetify1.Chr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Vuetify1.ElectronNet", "AspNetCore.Vue.Vuetify1.ElectronNet\AspNetCore.Vue.Vuetify1.ElectronNet.csproj", "{F4E3B4AF-49F9-44A3-91D3-0C955BEE027E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Vue.Vuetify2", "AspNetCore.Vue.Vuetify2\AspNetCore.Vue.Vuetify2.csproj", "{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +41,6 @@ Global
 		{F4E3B4AF-49F9-44A3-91D3-0C955BEE027E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4E3B4AF-49F9-44A3-91D3-0C955BEE027E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4E3B4AF-49F9-44A3-91D3-0C955BEE027E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,7 +51,6 @@ Global
 		{501A3B85-D955-4591-B749-302B5A051034} = {D5B8C1B8-0B76-433C-9809-AC126CEF88A3}
 		{04900815-2D0F-400C-A9FB-E10DF32DA838} = {D5B8C1B8-0B76-433C-9809-AC126CEF88A3}
 		{F4E3B4AF-49F9-44A3-91D3-0C955BEE027E} = {D5B8C1B8-0B76-433C-9809-AC126CEF88A3}
-		{3B21771E-67FE-46C2-BEEB-2BFD206E4E6E} = {D5B8C1B8-0B76-433C-9809-AC126CEF88A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0671E25-A930-47F1-A4B8-65FF3602EABA}

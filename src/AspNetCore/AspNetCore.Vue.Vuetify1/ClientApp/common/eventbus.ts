@@ -6,5 +6,5 @@
 
 import Vue from 'vue';
 
-/* Used for events from the top navbar */
-export const TopNavBarEvents = new Vue();
+/* General events */
+export const GeneralEvents = new Vue();

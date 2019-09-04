@@ -2,8 +2,17 @@
 
 ## General
 
-  * Fix formatting (dark theme) / ClientApp code / CSS
   * Do a compare for ClientApp between different front ends
   * test webpack build - production instead of dev
-  * final diffs between different frontends
   * update sass-loader / fix the webpack for it (needs a seperate option setting)
+
+## Vuetify2
+
+  * look at the icons - fa svg?
+    https://vuetifyjs.com/en/customization/icons
+  * branding / clean up the css folder
+
+## Bootstrap / Foundation
+
+  * Fix formatting (dark theme) / ClientApp code / CSS
+  * branding / clean up the css folder

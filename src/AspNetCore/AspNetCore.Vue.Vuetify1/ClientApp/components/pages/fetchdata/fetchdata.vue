@@ -8,7 +8,7 @@
 
                     <p>This component demonstrates fetching data from the server.</p>
 
-                    <table v-if="forecasts.length" class="table">
+                    <v-simple-table v-if="forecasts.length" class="table">
                         <thead>
                             <tr>
                                 <th>Date</th>
@@ -25,7 +25,7 @@
                                 <td>{{ item.summary }}</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </v-simple-table>
 
                     <p v-else><em>Loading...</em></p>
                 </div>

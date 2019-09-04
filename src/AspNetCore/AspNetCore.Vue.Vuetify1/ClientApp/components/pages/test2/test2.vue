@@ -15,7 +15,7 @@
 
                 <v-tooltip right>
                     <template v-slot:activator="{ on }">
-                        <v-btn icon large href="https://codepen.io/johnjleider/pen/qxQWda" target="_blank" v-on="on">
+                        <v-btn icon large target="_blank" v-on="on">
                             <v-icon large>fa-codepen</v-icon>
                         </v-btn>
                     </template>

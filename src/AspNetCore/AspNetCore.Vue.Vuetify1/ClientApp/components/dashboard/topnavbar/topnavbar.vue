@@ -10,4 +10,3 @@
 </template>
 
 <script src="./topnavbar.ts"></script>
-<!--<style src="./topnavbar.scss"></style> -->
