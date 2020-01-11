@@ -6,8 +6,8 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 5.12.0
   '@fortawesome/vue-fontawesome': 0.1.7_739999183bde01e66f3ec96e62e5f88c
   ajv: 6.10.2
-  bootstrap: 4.3.1_jquery@3.4.1+popper.js@1.16.0
-  bootstrap-vue: 2.0.0-rc.28_jquery@3.4.1+vue@2.6.11
+  bootstrap: 4.4.1_jquery@3.4.1+popper.js@1.16.0
+  bootstrap-vue: 2.2.0_jquery@3.4.1+vue@2.6.11
   event-source-polyfill: 1.0.11
   isomorphic-fetch: 2.2.1
   jquery: 3.4.1
@@ -16,8 +16,8 @@ dependencies:
   vue: 2.6.11
   vue-router: 3.1.3
   vue-server-renderer: 2.6.11
-  vuex: 3.1.1
-  vuex-router-sync: 5.0.0_vue-router@3.1.3+vuex@3.1.1
+  vuex: 3.1.2
+  vuex-router-sync: 5.0.0_vue-router@3.1.3+vuex@3.1.2
 devDependencies:
   '@types/jquery': 3.3.31
   '@types/webpack-env': 1.15.0
@@ -116,7 +116,7 @@ packages:
       vue: ~2
     resolution:
       integrity: sha512-YCw2Q2m4fxzyFsPOH3uDYMoJztTD+pT+AAyse4LFpbdrBg+r8ueaVT8BFnXEjrGwMDJJeXrwJ5AOC6q/JWBI4w==
-  /@nuxt/opencollective/0.2.2:
+  /@nuxt/opencollective/0.3.0:
     dependencies:
       chalk: 2.4.2
       consola: 2.10.1
@@ -127,7 +127,7 @@ packages:
       npm: '>=5.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-ie50SpS47L+0gLsW4yP23zI/PtjsDRglyozX2G09jeiUazC1AJlGPZo0JUs9iuCDUoIgsDEf66y7/bSfig0BpA==
+      integrity: sha512-Vf09BxCdj1iT2IRqVwX5snaY2WCTkvM0O4cWWSO1ThCFuc4if0Q/nNwAgCxRU0FeYHJ7DdyMUNSdswCLKlVqeg==
   /@types/jquery/3.3.31:
     dependencies:
       '@types/sizzle': 2.3.2
@@ -593,12 +593,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap-vue/2.0.0-rc.28_jquery@3.4.1+vue@2.6.11:
+  /bootstrap-vue/2.2.0_jquery@3.4.1+vue@2.6.11:
     dependencies:
-      '@nuxt/opencollective': 0.2.2
-      bootstrap: 4.3.1_jquery@3.4.1+popper.js@1.15.0
-      popper.js: 1.15.0
-      portal-vue: 2.1.6_vue@2.6.11
+      '@nuxt/opencollective': 0.3.0
+      bootstrap: 4.4.1_jquery@3.4.1+popper.js@1.16.0
+      popper.js: 1.16.0
+      portal-vue: 2.1.7_vue@2.6.11
       vue-functional-data-merge: 3.1.0
     dev: false
     peerDependencies:
@@ -606,20 +606,8 @@ packages:
       vue: '*'
     requiresBuild: true
     resolution:
-      integrity: sha512-fTst7JK/qdxHlO0cNqMio02yXi+aCvubVFqlZwege32TRUvcQUI3QzrpacQ7CXBeWdIQMPi0XKd7caTa98o+eg==
-  /bootstrap/4.3.1_jquery@3.4.1+popper.js@1.15.0:
-    dependencies:
-      jquery: 3.4.1
-      popper.js: 1.15.0
-    dev: false
-    engines:
-      node: '>=6'
-    peerDependencies:
-      jquery: 1.9.1 - 3
-      popper.js: ^1.14.7
-    resolution:
-      integrity: sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
-  /bootstrap/4.3.1_jquery@3.4.1+popper.js@1.16.0:
+      integrity: sha512-Y/n6wxMga0Be/RKb1tkAZfCXfSN9vPS66TRuva/MlJ+MqyxW9+htbsTOQj13Yq0oBw0aY5r6cVBlqoCEpZb7tQ==
+  /bootstrap/4.4.1_jquery@3.4.1+popper.js@1.16.0:
     dependencies:
       jquery: 3.4.1
       popper.js: 1.16.0
@@ -628,9 +616,9 @@ packages:
       node: '>=6'
     peerDependencies:
       jquery: 1.9.1 - 3
-      popper.js: ^1.14.7
+      popper.js: ^1.16.0
     resolution:
-      integrity: sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
+      integrity: sha512-tbx5cHubwE6e2ZG7nqM3g/FZ5PQEDMWmMGNrCUBVRPHXTJaH7CBDdsLeu3eCh3B1tzAxTnAbtmrzvWEvT2NNEA==
   /brace-expansion/1.1.11:
     dependencies:
       balanced-match: 1.0.0
@@ -3856,22 +3844,18 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
-  /popper.js/1.15.0:
-    dev: false
-    resolution:
-      integrity: sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
   /popper.js/1.16.0:
     dev: false
     resolution:
       integrity: sha512-+G+EkOPoE5S/zChTpmBSSDYmhXJ5PsW8eMhH8cP/CQHMFPBG/kC9Y5IIw6qNYgdJ+/COf0ddY2li28iHaZRSjw==
-  /portal-vue/2.1.6_vue@2.6.11:
+  /portal-vue/2.1.7_vue@2.6.11:
     dependencies:
       vue: 2.6.11
     dev: false
     peerDependencies:
       vue: ^2.5.18
     resolution:
-      integrity: sha512-lvCF85D4e8whd0nN32D8FqKwwkk7nYUI3Ku8UAEx4Z1reomu75dv5evRUTZNaj1EalxxWNXiNl0EHRq36fG8WA==
+      integrity: sha512-+yCno2oB3xA7irTt0EU5Ezw22L2J51uKAacE/6hMPMoO/mx3h4rXFkkBkT4GFsMDv/vEe8TNKC3ujJJ0PTwb6g==
   /posix-character-classes/0.1.1:
     dev: true
     engines:
@@ -5646,20 +5630,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
-  /vuex-router-sync/5.0.0_vue-router@3.1.3+vuex@3.1.1:
+  /vuex-router-sync/5.0.0_vue-router@3.1.3+vuex@3.1.2:
     dependencies:
       vue-router: 3.1.3
-      vuex: 3.1.1
+      vuex: 3.1.2
     dev: false
     peerDependencies:
       vue-router: ^3.0.0
       vuex: ^3.0.0
     resolution:
       integrity: sha512-Mry2sO4kiAG64714X1CFpTA/shUH1DmkZ26DFDtwoM/yyx6OtMrc+MxrU+7vvbNLO9LSpgwkiJ8W+rlmRtsM+w==
-  /vuex/3.1.1:
+  /vuex/3.1.2:
     dev: false
     resolution:
-      integrity: sha512-ER5moSbLZuNSMBFnEBVGhQ1uCBNJslH9W/Dw2W7GZN23UQA69uapP5GTT9Vm8Trc0PzBSVt6LzF3hGjmv41xcg==
+      integrity: sha512-ha3jNLJqNhhrAemDXcmMJMKf1Zu4sybMPr9KxJIuOpVcsDQlTBYLLladav2U+g1AvdYDG5Gs0xBTb0M5pXXYFQ==
   /watchpack/1.6.0:
     dependencies:
       chokidar: 2.1.8
@@ -5918,8 +5902,8 @@ specifiers:
   '@types/webpack-env': ^1.15.0
   ajv: ^6.10.2
   aspnet-webpack: ^3.0.0
-  bootstrap: 4.3.1
-  bootstrap-vue: 2.0.0-rc.28
+  bootstrap: 4.4.1
+  bootstrap-vue: 2.2.0
   cross-env: ^5.2.1
   css-loader: ^3.4.2
   event-source-polyfill: ^1.0.11
@@ -5948,7 +5932,7 @@ specifiers:
   vue-server-renderer: ^2.6.11
   vue-style-loader: 4.1.2
   vue-template-compiler: ^2.6.11
-  vuex: ^3.1.1
+  vuex: ^3.1.2
   vuex-router-sync: ^5.0.0
   webpack: ^4.41.5
   webpack-cli: ^3.3.10
