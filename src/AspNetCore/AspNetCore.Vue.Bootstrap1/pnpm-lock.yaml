@@ -4,18 +4,18 @@ dependencies:
   '@fortawesome/free-brands-svg-icons': 5.12.0
   '@fortawesome/free-regular-svg-icons': 5.12.0
   '@fortawesome/free-solid-svg-icons': 5.12.0
-  '@fortawesome/vue-fontawesome': 0.1.7_8b64c90f68f882c5ecb5b44c06118dd9
+  '@fortawesome/vue-fontawesome': 0.1.7_739999183bde01e66f3ec96e62e5f88c
   ajv: 6.10.2
   bootstrap: 4.3.1_jquery@3.4.1+popper.js@1.16.0
-  bootstrap-vue: 2.0.0-rc.28_jquery@3.4.1+vue@2.6.10
+  bootstrap-vue: 2.0.0-rc.28_jquery@3.4.1+vue@2.6.11
   event-source-polyfill: 1.0.11
   isomorphic-fetch: 2.2.1
   jquery: 3.4.1
   metismenu: 3.0.5_jquery@3.4.1
   popper.js: 1.16.0
-  vue: 2.6.10
+  vue: 2.6.11
   vue-router: 3.1.3
-  vue-server-renderer: 2.6.10
+  vue-server-renderer: 2.6.11
   vuex: 3.1.1
   vuex-router-sync: 5.0.0_vue-router@3.1.3+vuex@3.1.1
 devDependencies:
@@ -41,7 +41,7 @@ devDependencies:
   vue-loader: 15.8.3_css-loader@3.4.2+webpack@4.41.5
   vue-property-decorator: 8.3.0
   vue-style-loader: 4.1.2
-  vue-template-compiler: 2.6.10
+  vue-template-compiler: 2.6.11
   webpack: 4.41.5_webpack@4.41.5
   webpack-cli: 3.3.10_webpack@4.41.5
   webpack-dev-middleware: 3.7.2_webpack@4.41.5
@@ -106,10 +106,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-CnpsWs6GhTs9ekNB3d8rcO5HYqRkXbYKf2YNiAlTWbj5eVlPqsd/XH1F9If8jkcR1aegryAbln/qYeKVZzpM0g==
-  /@fortawesome/vue-fontawesome/0.1.7_8b64c90f68f882c5ecb5b44c06118dd9:
+  /@fortawesome/vue-fontawesome/0.1.7_739999183bde01e66f3ec96e62e5f88c:
     dependencies:
       '@fortawesome/fontawesome-svg-core': 1.2.26
-      vue: 2.6.10
+      vue: 2.6.11
     dev: false
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': '>= 1.2.0 < 1.3'
@@ -593,12 +593,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-aN/1++YMUes3cl6p4+0xDcwed24=
-  /bootstrap-vue/2.0.0-rc.28_jquery@3.4.1+vue@2.6.10:
+  /bootstrap-vue/2.0.0-rc.28_jquery@3.4.1+vue@2.6.11:
     dependencies:
       '@nuxt/opencollective': 0.2.2
       bootstrap: 4.3.1_jquery@3.4.1+popper.js@1.15.0
       popper.js: 1.15.0
-      portal-vue: 2.1.6_vue@2.6.10
+      portal-vue: 2.1.6_vue@2.6.11
       vue-functional-data-merge: 3.1.0
     dev: false
     peerDependencies:
@@ -2972,13 +2972,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
-  /lodash.template/4.4.0:
+  /lodash.template/4.5.0:
     dependencies:
       lodash._reinterpolate: 3.0.0
       lodash.templatesettings: 4.1.0
     dev: false
     resolution:
-      integrity: sha1-5zoDhcg1VZF0bgILmWecaQ5o+6A=
+      integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
   /lodash.templatesettings/4.1.0:
     dependencies:
       lodash._reinterpolate: 3.0.0
@@ -3864,9 +3864,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+G+EkOPoE5S/zChTpmBSSDYmhXJ5PsW8eMhH8cP/CQHMFPBG/kC9Y5IIw6qNYgdJ+/COf0ddY2li28iHaZRSjw==
-  /portal-vue/2.1.6_vue@2.6.10:
+  /portal-vue/2.1.6_vue@2.6.11:
     dependencies:
-      vue: 2.6.10
+      vue: 2.6.11
     dev: false
     peerDependencies:
       vue: ^2.5.18
@@ -4565,16 +4565,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
-  /resolve/1.10.0:
-    dependencies:
-      path-parse: 1.0.6
-    dev: false
-    resolution:
-      integrity: sha512-3sUr9aq5OfSg2S9pNtPA9hL1FVEAjvfOC4leW0SNf/mpnaakz2a9femSd6LqAww2RaFctwyf1lCqnTHuF1rxDg==
   /resolve/1.12.0:
     dependencies:
       path-parse: 1.0.6
-    dev: true
     resolution:
       integrity: sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==
   /ret/0.1.15:
@@ -4743,16 +4736,11 @@ packages:
     dev: true
     resolution:
       integrity: sha1-H24t2jnBaL+S0T+G1KkYkz9mftQ=
-  /serialize-javascript/1.6.1:
-    dev: false
-    resolution:
-      integrity: sha512-A5MOagrPFga4YaKQSWHryl7AXvbQkEqpw4NNYMTNYUNV51bA8ABHgYFpqKx+YFFrw59xMV1qGH1R4AgoNIVgCw==
   /serialize-javascript/1.9.0:
     dev: true
     resolution:
       integrity: sha512-UkGlcYMtw4d9w7YfCtJFgdRTps8N4L0A48R+SmcGL57ki1+yHwJXnalk5bjgrw+ljv6SfzjzPjhohod2qllg/Q==
   /serialize-javascript/2.1.2:
-    dev: true
     resolution:
       integrity: sha512-rs9OggEUF0V4jUSecXazOYsLfu7OGK2qIn3c7IPBiffz32XniEp/TX9Xmc9LQfK2nQ2QKHvZ2oygKUGU0lG4jQ==
   /set-blocking/2.0.0:
@@ -5623,19 +5611,19 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8iSa4mGNXBjyuSZFCCO4fiKfvzqk+mhL0lnKuGcQtO1eoj8nq3CmbEG8FwK5QqoqwDgsjsf1GDuisDX4cdb/aQ==
-  /vue-server-renderer/2.6.10:
+  /vue-server-renderer/2.6.11:
     dependencies:
       chalk: 1.1.3
       hash-sum: 1.0.2
       he: 1.2.0
-      lodash.template: 4.4.0
+      lodash.template: 4.5.0
       lodash.uniq: 4.5.0
-      resolve: 1.10.0
-      serialize-javascript: 1.6.1
+      resolve: 1.12.0
+      serialize-javascript: 2.1.2
       source-map: 0.5.6
     dev: false
     resolution:
-      integrity: sha512-UYoCEutBpKzL2fKCwx8zlRtRtwxbPZXKTqbl2iIF4yRZUNO/ovrHyDAJDljft0kd+K0tZhN53XRHkgvCZoIhug==
+      integrity: sha512-V3faFJHr2KYfdSIalL+JjinZSHYUhlrvJ9pzCIjjwSh77+pkrsXpK4PucdPcng57+N77pd1LrKqwbqjQdktU1A==
   /vue-style-loader/4.1.2:
     dependencies:
       hash-sum: 1.0.2
@@ -5643,21 +5631,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0ip8ge6Gzz/Bk0iHovU9XAUQaFt/G2B61bnWa2tCcqqdgfHs1lF9xXorFbE55Gmy92okFT+8bfmySuUOu13vxQ==
-  /vue-template-compiler/2.6.10:
+  /vue-template-compiler/2.6.11:
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
     dev: true
     resolution:
-      integrity: sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==
+      integrity: sha512-KIq15bvQDrcCjpGjrAhx4mUlyyHfdmTaoNfeoATHLAiWB+MU3cx4lOzMwrnUh9cCxy0Lt1T11hAFY6TQgroUAA==
   /vue-template-es2015-compiler/1.9.1:
     dev: true
     resolution:
       integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
-  /vue/2.6.10:
+  /vue/2.6.11:
     dev: false
     resolution:
-      integrity: sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+      integrity: sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
   /vuex-router-sync/5.0.0_vue-router@3.1.3+vuex@3.1.1:
     dependencies:
       vue-router: 3.1.3
@@ -5953,13 +5941,13 @@ specifiers:
   tslint: ^5.20.1
   typescript: ^3.7.4
   url-loader: ^2.1.0
-  vue: ^2.6.1
+  vue: ^2.6.11
   vue-loader: ^15.8.3
   vue-property-decorator: ^8.3.0
   vue-router: ^3.1.3
-  vue-server-renderer: ^2.6.1
+  vue-server-renderer: ^2.6.11
   vue-style-loader: 4.1.2
-  vue-template-compiler: ^2.6.1
+  vue-template-compiler: ^2.6.11
   vuex: ^3.1.1
   vuex-router-sync: ^5.0.0
   webpack: ^4.41.5
