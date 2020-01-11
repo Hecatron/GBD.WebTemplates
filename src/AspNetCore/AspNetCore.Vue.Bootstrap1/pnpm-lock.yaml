@@ -20,8 +20,8 @@ dependencies:
   vuex-router-sync: 5.0.0_vue-router@3.1.3+vuex@3.1.1
 devDependencies:
   '@types/jquery': 3.3.31
-  '@types/webpack-env': 1.14.0
-  aspnet-webpack: 3.0.0_544bba003ebfee3470c235e87c0982e5
+  '@types/webpack-env': 1.15.0
+  aspnet-webpack: 3.0.0_c7dd40a2ba1ec9eba602bb9a144327bf
   cross-env: 5.2.1
   css-loader: 3.4.2_webpack@4.41.5
   extract-css-chunks-webpack-plugin: 4.7.1_webpack@4.41.5
@@ -38,13 +38,13 @@ devDependencies:
   tslint: 5.20.1_typescript@3.7.4
   typescript: 3.7.4
   url-loader: 2.1.0_webpack@4.41.5
-  vue-loader: 15.7.1_css-loader@3.4.2+webpack@4.41.5
-  vue-property-decorator: 8.2.2
+  vue-loader: 15.8.3_css-loader@3.4.2+webpack@4.41.5
+  vue-property-decorator: 8.3.0
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.10
   webpack: 4.41.5_webpack@4.41.5
   webpack-cli: 3.3.10_webpack@4.41.5
-  webpack-dev-middleware: 3.7.0_webpack@4.41.5
+  webpack-dev-middleware: 3.7.2_webpack@4.41.5
   webpack-hot-middleware: 2.25.0
 lockfileVersion: 5.1
 packages:
@@ -142,24 +142,24 @@ packages:
     dev: true
     resolution:
       integrity: sha512-7EJYyKTL7tFR8+gDbB6Wwz/arpGa0Mywk1TJbNzKzHtzbwVmY4HR9WqS5VV7dsBUKQmPNr192jHr/VpBluj/hg==
-  /@types/webpack-env/1.14.0:
+  /@types/webpack-env/1.15.0:
     dev: true
     resolution:
-      integrity: sha512-Fv+0gYJzE/czLoRKq+gnXWr4yBpPM3tO3C8pDLFwqVKlMICQUq5OsxwwFZYDaVr7+L6mgNDp16iOcJHEz3J5RQ==
-  /@vue/component-compiler-utils/3.0.0:
+      integrity: sha512-TfcyNecCz8Z9/s90gBOBniyzZrTru8u2Vp0VZODq4KEBaQu8bfXvu7o/KUOecMpzjbFPUA7aqgSq628Iue5BQg==
+  /@vue/component-compiler-utils/3.1.1:
     dependencies:
       consolidate: 0.15.1
       hash-sum: 1.0.2
       lru-cache: 4.1.5
       merge-source-map: 1.1.0
-      postcss: 7.0.17
-      postcss-selector-parser: 5.0.0
-      prettier: 1.16.3
+      postcss: 7.0.26
+      postcss-selector-parser: 6.0.2
+      prettier: 1.19.1
       source-map: 0.6.1
       vue-template-es2015-compiler: 1.9.1
     dev: true
     resolution:
-      integrity: sha512-am+04/0UX7ektcmvhYmrf84BDVAD8afFOf4asZjN84q8xzxFclbk5x0MtxuKGfp+zjN5WWPJn3fjFAWtDdIGSw==
+      integrity: sha512-+lN3nsfJJDGMNz7fCpcoYIORrXo0K3OTsdr8jCM7FuqdI4+70TY6gxY6viJ2Xi1clqyPg7LpeOWwjF31vSMmUw==
   /@webassemblyjs/ast/1.8.5:
     dependencies:
       '@webassemblyjs/helper-module-context': 1.8.5
@@ -460,14 +460,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-jxwzQpLQjSmWXgwaCZE9Nz+glAG01yF1QnWgbhGwHI5A6FRIEY6IVqtHhIepHqI7/kyEyQEagBC5mBEFlIYvdg==
-  /aspnet-webpack/3.0.0_544bba003ebfee3470c235e87c0982e5:
+  /aspnet-webpack/3.0.0_c7dd40a2ba1ec9eba602bb9a144327bf:
     dependencies:
       connect: 3.6.6
       es6-promise: 3.3.1
       memory-fs: 0.3.0
       require-from-string: 1.2.1
       webpack: 4.41.5_webpack@4.41.5
-      webpack-dev-middleware: 3.7.0_webpack@4.41.5
+      webpack-dev-middleware: 3.7.2_webpack@4.41.5
       webpack-node-externals: 1.7.2
     dev: true
     peerDependencies:
@@ -3191,13 +3191,6 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==
-  /mime/2.4.3:
-    dev: true
-    engines:
-      node: '>=4.0.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-QgrPRJfE+riq5TPZMcHZOtm8c6K/yYrMbKIoRfapfiGLxS8OTeIfRhUGW5LU7MlRa52KOAGCfUNruqLrIBvWZw==
   /mime/2.4.4:
     dev: true
     engines:
@@ -4275,13 +4268,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
-  /prettier/1.16.3:
+  /prettier/1.19.1:
     dev: true
     engines:
       node: '>=4'
     hasBin: true
     resolution:
-      integrity: sha512-kn/GU6SMRYPxUakNXhpP0EedT/KmaPzr0H5lIsDogrykbaxOpOfAFfk5XA7DZrJyMAv1wlMV3CPcZruGXVVUZw==
+      integrity: sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -5601,9 +5594,9 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
-  /vue-loader/15.7.1_css-loader@3.4.2+webpack@4.41.5:
+  /vue-loader/15.8.3_css-loader@3.4.2+webpack@4.41.5:
     dependencies:
-      '@vue/component-compiler-utils': 3.0.0
+      '@vue/component-compiler-utils': 3.1.1
       css-loader: 3.4.2_webpack@4.41.5
       hash-sum: 1.0.2
       loader-utils: 1.2.3
@@ -5612,16 +5605,20 @@ packages:
       webpack: 4.41.5_webpack@4.41.5
     dev: true
     peerDependencies:
+      cache-loader: '*'
       css-loader: '*'
-      webpack: ^4.1.0 || ^5.0.0-0
+      webpack: ^3.0.0 || ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      cache-loader:
+        optional: true
     resolution:
-      integrity: sha512-fwIKtA23Pl/rqfYP5TSGK7gkEuLhoTvRYW+TU7ER3q9GpNLt/PjG5NLv3XHRDiTg7OPM1JcckBgds+VnAc+HbA==
-  /vue-property-decorator/8.2.2:
+      integrity: sha512-yFksTFbhp+lxlm92DrKdpVIWMpranXnTEuGSc0oW+Gk43M9LWaAmBTnfj5+FCdve715mTHvo78IdaXf5TbiTJg==
+  /vue-property-decorator/8.3.0:
     dependencies:
       vue-class-component: 7.1.0
     dev: true
     resolution:
-      integrity: sha512-3gRrIeoUtjXvkoMX2stJsVs7805Pa9MXEndnk21ej+sWO7AIc5HF1TKqK0Pox5TEjpO02UbadIF0QWNrx6ZwXQ==
+      integrity: sha512-77YtTbZHd5CNiPzbqv51kEgL48yvD2dUDfF28vEyw3MbQ9bBAb/tDyFzskcqjNRbWyXk1vq4oM2CK/LfhxuIBg==
   /vue-router/3.1.3:
     dev: false
     resolution:
@@ -5705,10 +5702,11 @@ packages:
       webpack: 4.x.x
     resolution:
       integrity: sha512-u1dgND9+MXaEt74sJR4PR7qkPxXUSQ0RXYq8x1L6Jg1MYVEmGPrH6Ah6C4arD4r0J1P5HKjRqpab36k0eIzPqg==
-  /webpack-dev-middleware/3.7.0_webpack@4.41.5:
+  /webpack-dev-middleware/3.7.2_webpack@4.41.5:
     dependencies:
       memory-fs: 0.4.1
-      mime: 2.4.3
+      mime: 2.4.4
+      mkdirp: 0.5.1
       range-parser: 1.2.1
       webpack: 4.41.5_webpack@4.41.5
       webpack-log: 2.0.0
@@ -5718,7 +5716,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0
     resolution:
-      integrity: sha512-qvDesR1QZRIAZHOE3iQ4CXLZZSQ1lAUsSpnQmlB1PBfoN/xdRjmge3Dok0W4IdaVLJOGJy3sGI4sZHwjRU0PCA==
+      integrity: sha512-1xC42LxbYoqLNAhV6YzTYacicgMZQTqRd27Sim9wn5hJrX3I5nxYy1SxSd4+gjUFsz1dQFj+yEe6zEVmSkeJjw==
   /webpack-external-import/0.3.0-beta.0_webpack@4.41.5:
     dependencies:
       dimport: 1.0.0
@@ -5929,7 +5927,7 @@ specifiers:
   '@fortawesome/free-solid-svg-icons': ^5.12.0
   '@fortawesome/vue-fontawesome': 0.1.7
   '@types/jquery': ^3.3.31
-  '@types/webpack-env': ^1.14.0
+  '@types/webpack-env': ^1.15.0
   ajv: ^6.10.2
   aspnet-webpack: ^3.0.0
   bootstrap: 4.3.1
@@ -5956,8 +5954,8 @@ specifiers:
   typescript: ^3.7.4
   url-loader: ^2.1.0
   vue: ^2.6.1
-  vue-loader: ^15.7.1
-  vue-property-decorator: ^8.2.2
+  vue-loader: ^15.8.3
+  vue-property-decorator: ^8.3.0
   vue-router: ^3.1.3
   vue-server-renderer: ^2.6.1
   vue-style-loader: 4.1.2
@@ -5966,5 +5964,5 @@ specifiers:
   vuex-router-sync: ^5.0.0
   webpack: ^4.41.5
   webpack-cli: ^3.3.10
-  webpack-dev-middleware: ^3.7.0
+  webpack-dev-middleware: ^3.7.2
   webpack-hot-middleware: ^2.25.0
