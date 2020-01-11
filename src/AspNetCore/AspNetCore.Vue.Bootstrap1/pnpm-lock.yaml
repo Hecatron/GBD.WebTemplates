@@ -34,9 +34,9 @@ devDependencies:
   sass-loader: 7.3.1_webpack@4.39.3
   style-loader: 1.1.2_webpack@4.39.3
   terser-webpack-plugin: 1.4.1_webpack@4.39.3
-  ts-loader: 6.0.4_typescript@3.6.2
-  tslint: 5.19.0_typescript@3.6.2
-  typescript: 3.6.2
+  ts-loader: 6.0.4_typescript@3.7.4
+  tslint: 5.19.0_typescript@3.7.4
+  typescript: 3.7.4
   url-loader: 2.1.0_webpack@4.39.3
   vue-loader: 15.7.1_css-loader@3.4.2+webpack@4.39.3
   vue-property-decorator: 8.2.2
@@ -5318,14 +5318,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-m6s2OdQe5wgpFMC+pAJ+q9djG82O2jcHPOI6RNg1yy9rCYR+WD6Nbpl32fDpfC56nirdRy+opFa/Vk7HYhqaew==
-  /ts-loader/6.0.4_typescript@3.6.2:
+  /ts-loader/6.0.4_typescript@3.7.4:
     dependencies:
       chalk: 2.4.2
       enhanced-resolve: 4.1.0
       loader-utils: 1.2.3
       micromatch: 4.0.2
       semver: 6.3.0
-      typescript: 3.6.2
+      typescript: 3.7.4
     dev: true
     engines:
       node: '>=8.6'
@@ -5337,7 +5337,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
-  /tslint/5.19.0_typescript@3.6.2:
+  /tslint/5.19.0_typescript@3.7.4:
     dependencies:
       '@babel/code-frame': 7.5.5
       builtin-modules: 1.1.1
@@ -5351,8 +5351,8 @@ packages:
       resolve: 1.12.0
       semver: 5.7.1
       tslib: 1.10.0
-      tsutils: 2.29.0_typescript@3.6.2
-      typescript: 3.6.2
+      tsutils: 2.29.0_typescript@3.7.4
+      typescript: 3.7.4
     dev: true
     engines:
       node: '>=4.8.0'
@@ -5361,10 +5361,10 @@ packages:
       typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
     resolution:
       integrity: sha512-1LwwtBxfRJZnUvoS9c0uj8XQtAnyhWr9KlNvDIdB+oXyT+VpsOAaEhEgKi1HrZ8rq0ki/AAnbGSv4KM6/AfVZw==
-  /tsutils/2.29.0_typescript@3.6.2:
+  /tsutils/2.29.0_typescript@3.7.4:
     dependencies:
       tslib: 1.10.0
-      typescript: 3.6.2
+      typescript: 3.7.4
     dev: true
     peerDependencies:
       typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
@@ -5388,13 +5388,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.6.2:
+  /typescript/3.7.4:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
+      integrity: sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
   /union-value/1.0.1:
     dependencies:
       arr-union: 3.1.0
@@ -5929,7 +5929,7 @@ specifiers:
   terser-webpack-plugin: 1.4.1
   ts-loader: 6.0.4
   tslint: ^5.19.0
-  typescript: ^3.6.2
+  typescript: ^3.7.4
   url-loader: ^2.1.0
   vue: ^2.6.1
   vue-loader: ^15.7.1
